@@ -1,0 +1,17 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Audiowide");
+
+body {
+    font-family: 'Audiowide', sans-serif;
+    background: url(../images/1781.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: black;
+    color: blue;
+    text-shadow: 1px 1px aliceblue;
+    text-align: center;
+}

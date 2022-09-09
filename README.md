@@ -189,6 +189,8 @@ The repository can be found here -
 
 ### Content
 
+- Game Background: <a href="https://www.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_7743415.htm#query=desert%20background&position=7&from_view=keyword">Image by upklyak</a> on Freepik
+
 ### Media
 
 **404 Page**
