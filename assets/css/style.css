@@ -93,3 +93,37 @@ header {
     color: blue;
     text-shadow: 1px 1px aliceblue;
 }
+
+/*Error 404 page*/
+#error-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 30%;
+    margin: auto;
+}
+
+#error-area img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#error-area p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    border: 2px solid white;
+}
+
+#home-btn{
+    font-size: medium;
+    width: 180px;
+    height: 60px;
+    margin-top: 1%;
+}
+
