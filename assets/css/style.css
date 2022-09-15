@@ -107,6 +107,8 @@ header {
     text-decoration: none;
     color: aliceblue;
     text-shadow: 3px 3px blue;
+    font-size: 150%;
+    margin: 0 10px;
 }
 
 #footer i:hover {
@@ -196,6 +198,12 @@ header {
         height: 60px;
     }
 
+    /*Footer*/
+    #footer i {
+        font-size: 100%;
+        margin: 0 10px;
+    }
+
     /*Error 404 page*/
     #error-area{
         width: 90%;
@@ -249,6 +257,12 @@ header {
         width: 80px;
         height: 60px;
     }
+
+        /*Footer*/
+        #footer i {
+            font-size: 100%;
+            margin: 0 10px;
+        }    
 
     /*Error 404 page*/
     #error-area{
