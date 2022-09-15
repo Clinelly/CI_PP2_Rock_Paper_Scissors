@@ -63,10 +63,18 @@ header {
 
 .btn--pri {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     background-color: greenyellow;
-    margin: 15px auto;
+    margin: 15px 10px;
+}
+
+.btn--pri::after {
+    content: attr(id);
+    color: inherit;
+    font-size: medium;
+    position: relative;
+    display: block;
 }
 
 /*Style for game options*/
