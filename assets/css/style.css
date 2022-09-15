@@ -20,8 +20,8 @@ body {
 /* Header */
 header {
     background-color: rgba(0, 0, 0, 0.5);
-    color: blue;
-    text-shadow: 1px 1px aliceblue;
+    color: aliceblue;
+    text-shadow: 3px 3px blue;
     text-align: center;
     width: 100%;
     font-size: xx-large;
@@ -74,7 +74,7 @@ header {
 
 .btn--sec {
     background-color: greenyellow;
-    border-radius: 25%;
+    border-radius: 10px;
     width: 120px;
     height: 100px;
     margin: 15px auto;
@@ -90,8 +90,9 @@ header {
 
 #footer i {
     text-decoration: none;
-    color: blue;
-    text-shadow: 1px 1px aliceblue;
+    color: aliceblue;
+    text-shadow: 3px 3px blue;
+    font-size: xx-large;
 }
 
 /*Error 404 page*/
