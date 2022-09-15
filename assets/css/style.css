@@ -147,3 +147,23 @@ header {
     cursor: pointer;
 }
 
+/* Media Queries */
+/* for very small screens 320px. */
+@media screen and (max-width: 320px) {
+}
+
+/* for smaller screens between 321px and 480px */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+}
+
+/* for screen sizes between 481px and 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* for  screens sizes between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* for  screens sizes between 1025px and 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
