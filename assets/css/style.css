@@ -149,7 +149,7 @@ header {
 }
 
 /* Media Queries */
-/* for very small screens 320px. */
+/* for very small mobile screens - 320px wide. */
 @media screen and (max-width: 320px) {
 
     /*Header*/
@@ -203,12 +203,109 @@ header {
 
 }
 
-/* for smaller screens between 321px and 480px */
-@media screen and (min-width: 321px) and (max-width: 480px) {
+/* for small to large mobile screens between 321px and 425px wide. */
+@media screen and (min-width: 321px) and (max-width: 426px) {
+
+    /*Header*/
+    header {
+        font-size: small;
+    }
+
+    /*Style for text and game area*/
+    
+    #game-text {
+        line-height: 50px;
+        width: 90%;
+    }
+    
+    #button-area {
+        width: 100%;
+    }   
+
+    /*Game Buttons*/
+    .btn {
+        border: double white;
+        font-family: 'Audiowide', sans-serif;
+        font-size: large;
+    }
+
+    .btn--pri {
+        width: 70px;
+        height: 70px;
+        margin: 5px 10px;
+    }
+
+    .btn--pri::after {
+        font-size: small;
+    }
+
+    /*Style for game options*/
+    #rules-area {
+        width: 90%;
+    }
+
+    .btn--sec {
+        font-size: small;
+        width: 80px;
+        height: 60px;
+    }
+
+    /*Error 404 page*/
+    #error-area{
+        width: 90%;
+    }
+
 }
 
-/* for screen sizes between 481px and 768px */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* for tablet screen sizes between 426px and 769px wide. */
+@media screen and (min-width: 426px) and (max-width: 769px) {
+
+        /*Header*/
+        header {
+            font-size: large;
+        }
+    
+        /*Style for text and game area*/
+        
+        #game-text {
+            line-height: 50px;
+            width: 90%;
+        }
+        
+        #button-area {
+            width: 100%;
+        }   
+    
+        /*Game Buttons*/
+        .btn {
+            font-size: large;
+        }
+    
+        .btn--pri {
+            width: 90px;
+            height: 90px;
+            margin: 5px 10px;
+        }
+    
+        .btn--pri::after {
+            font-size: medium;
+        }
+    
+        /*Style for game options*/
+        #rules-area {
+            width: 90%;
+        }
+    
+        .btn--sec {
+            font-size: large;
+            width: 100px;
+            height: 80px;
+        }
+    
+        /*Error 404 page*/
+        #error-area{
+            width: 70%;
+        }    
 }
 
 /* for  screens sizes between 769px and 1024px */
