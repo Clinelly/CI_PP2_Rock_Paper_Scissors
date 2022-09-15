@@ -55,6 +55,11 @@ header {
     font-size: xx-large;
 }
 
+.btn:hover {
+    background-color: white;
+    border: double greenyellow;
+}
+
 .btn--pri {
     border-radius: 50%;
     width: 60px;
@@ -92,7 +97,6 @@ header {
     text-decoration: none;
     color: aliceblue;
     text-shadow: 3px 3px blue;
-    font-size: xx-large;
 }
 
 /*Error 404 page*/
