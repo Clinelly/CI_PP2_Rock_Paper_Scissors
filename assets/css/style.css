@@ -58,6 +58,7 @@ header {
 .btn:hover {
     background-color: white;
     border: double greenyellow;
+    cursor: pointer;
 }
 
 .btn--pri {
@@ -135,5 +136,6 @@ header {
     width: 180px;
     height: 60px;
     margin-top: 1%;
+    cursor: pointer;
 }
 
