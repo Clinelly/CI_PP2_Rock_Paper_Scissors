@@ -11,8 +11,9 @@
 /*Game background and general styling */
 body {
     font-family: 'Audiowide', sans-serif;
-    background: url(../images/1781.jpg);
+    background: url(../images/1781.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: auto;
 }
@@ -150,6 +151,56 @@ header {
 /* Media Queries */
 /* for very small screens 320px. */
 @media screen and (max-width: 320px) {
+
+    /*Header*/
+    header {
+        font-size: small;
+    }
+
+    /*Style for text and game area*/
+    
+    #game-text {
+        line-height: 50px;
+        width: 90%;
+    }
+    
+    #button-area {
+        width: 100%;
+    }   
+
+    /*Game Buttons*/
+    .btn {
+        border: double white;
+        font-family: 'Audiowide', sans-serif;
+        font-size: large;
+    }
+
+    .btn--pri {
+        width: 70px;
+        height: 70px;
+        margin: 5px 10px;
+    }
+
+    .btn--pri::after {
+        font-size: small;
+    }
+
+    /*Style for game options*/
+    #rules-area {
+        width: 90%;
+    }
+
+    .btn--sec {
+        font-size: small;
+        width: 80px;
+        height: 60px;
+    }
+
+    /*Error 404 page*/
+    #error-area{
+        width: 90%;
+    }
+
 }
 
 /* for smaller screens between 321px and 480px */
