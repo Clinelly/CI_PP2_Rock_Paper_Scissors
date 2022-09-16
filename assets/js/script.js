@@ -10,12 +10,15 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("data-type") === "reset"){ //Restores text-area html to initial value
                     document.getElementById("game-text").innerHTML = "Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!";
                 } else if (this.getAttribute("data-type") === "play"){
-                    runGame();
+                    gameSetup();
             }
         })
     }
 })
-
-function runGame() {
+/**
+ * Main game loop. Changes text area and sets up event listeners for input buttons.
+ */
+//Changes text area html in preparation for the game.
+function gameSetup() {
     document.getElementById("game-text").innerHTML = "Your Score: <br> Computer Score: <br> Choose wisely! Rock, Paper, Scissors, Lizard or Spock...";
 }
