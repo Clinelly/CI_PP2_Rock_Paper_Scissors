@@ -188,11 +188,11 @@ The repository can be found here -
 ## Credits
 
 ### Content
-
-- Game Background: <a href="https://www.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_7743415.htm#query=desert%20background&position=7&from_view=keyword">Image by upklyak</a> on Freepik
-- 404 image: <a href="https://lovepik.com/images/png-404.html">404 Png vectors by Lovepik.com</a>
+- Fix 401 error https://medium.com/@aurelien.delogu/401-error-on-a-webmanifest-file-cb9e3678b9f3
 
 ### Media
+- Game Background: <a href="https://www.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_7743415.htm#query=desert%20background&position=7&from_view=keyword">Image by upklyak</a> on Freepik
+- 404 image: <a href="https://lovepik.com/images/png-404.html">404 Png vectors by Lovepik.com</a>
 
 **404 Page**
 
