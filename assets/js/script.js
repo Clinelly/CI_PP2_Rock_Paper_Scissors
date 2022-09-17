@@ -24,29 +24,39 @@ document.addEventListener("DOMContentLoaded", function(){
  */
 function runGame (userInput){
     let userAnswer = userInput;
+        if (userInput = "rock"){
+            userInput = "Rock"
+        } else if (userInput = "paper"){
+            userInput = "Paper"
+        } else if (userInput = "scissors"){
+            userInput = "Scissors"
+        } else if (userInput = "lizard"){
+            userInput = "Lizard"
+        } else userInput = "Spock"
     console.log(userAnswer)
     let compAnswer = Math.floor(Math.random()*5)+1;
     if (compAnswer === 1){
-        compAnswer = "Rock";
+        compAnswer = "rock";
     } else if (compAnswer === 2){
-        compAnswer = "Paper";
+        compAnswer = "paper";
         } else if (compAnswer === 3){
-            compAnswer = "Scissors";
+            compAnswer = "scissors";
             } else if (compAnswer === 4){
-                compAnswer = "Lizard"
-                } else if (compAnswer = 5){
-                    compAnswer = "Spock"
-}
+                compAnswer = "lizard"
+                } else compAnswer = "spock"
     console.log(compAnswer)
 }
+
 
 /**
  * Takes the values of the user input and computer choice and compares them.
  * Decides who has won the round.
  */
- function compareAnswer(compInput){
-    let userAnswer = userChoice();
-    let compAnswer = compInput();
+ function compare(_runGame){
+    if (userAnswer === compAnswer) {
+        console.log("Tie")
     }
+
+}
 
 
