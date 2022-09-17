@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     } else {
                         let userInput = this.getAttribute("data-type")
                         alert(`You clicked ${userInput}.`);
+                        return(userInput);
             }
         })
     }
@@ -22,4 +23,22 @@ document.addEventListener("DOMContentLoaded", function(){
 //Changes text area html in preparation for the game.
 function gameSetup() {
     document.getElementById("game-text").innerHTML = "Your Score: <br> Computer Score: <br> Choose wisely! Rock, Paper, Scissors, Lizard or Spock...";
+}
+
+/**
+ * Generates a random number between 1-5 and assigns a game value to that number.
+ */
+function runGame() {
+    let comChoice = Math.floor(Math.random()*5)+1;
+    if (comChoice === "1"){
+        return("Rock");
+        } else if (comChoice === "2"){
+            return("Paper")
+            } else if (comChoice === "3"){
+                return("Scissors")
+                } else if (comChoice === "4"){
+                    return("Lizard")
+                    } else if (comChoice = "5"){
+                        return("Spock")
+                    }
 }
