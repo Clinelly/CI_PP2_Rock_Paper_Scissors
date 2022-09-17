@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("data-type") === "reset"){ //Restores text-area html to initial value
                     document.getElementById("game-text").innerHTML = "Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!";
                 } else if (this.getAttribute("data-type") === "play"){
-                    gameSetup();
+                    runGame();
                     } else {
                         let userInput = this.getAttribute("data-type")
                         alert(`You clicked ${userInput}.`);
@@ -29,16 +29,16 @@ function gameSetup() {
  * Generates a random number between 1-5 and assigns a game value to that number.
  */
 function runGame() {
-    let comChoice = Math.floor(Math.random()*5)+1;
-    if (comChoice === "1"){
-        return("Rock");
-        } else if (comChoice === "2"){
-            return("Paper")
-            } else if (comChoice === "3"){
-                return("Scissors")
-                } else if (comChoice === "4"){
-                    return("Lizard")
-                    } else if (comChoice = "5"){
-                        return("Spock")
+    let comChoice = Math.floor(Math.random()*5);
+    if (comChoice === 1){
+        console.log("Rock");
+        } else if (comChoice === 2){
+            console.log("Paper")
+            } else if (comChoice === 3){
+                console.log("Scissors")
+                } else if (comChoice === 4){
+                    console.log("Lizard")
+                    } else if (comChoice = 5){
+                        console.log("Spock")
                     }
 }
