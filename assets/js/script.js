@@ -10,35 +10,59 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("data-type") === "reset"){ //Restores text-area html to initial value
                     document.getElementById("game-text").innerHTML = "Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!";
                 } else if (this.getAttribute("data-type") === "play"){
-                    runGame();
-                    } else {
-                        let userInput = this.getAttribute("data-type")
-                        alert(`You clicked ${userInput}.`);
-                        return(userInput);
+                    compareAnswer();
+                } else {
+                    let userInput = this.getAttribute("data-type");
+                    runGame(userInput);
             }
         })
     }
 })
 
-//Changes text area html in preparation for the game.
-function gameSetup() {
-    document.getElementById("game-text").innerHTML = "Your Score: <br> Computer Score: <br> Choose wisely! Rock, Paper, Scissors, Lizard or Spock...";
+function compChoice();
+let compAnswer = Math.floor(Math.random()*5);
+if (compAnswer === 1){
+    return("Rock");
+        } else if (compAnswer === 2){
+            return("Paper");
+            } else if (compAnswer === 3){
+                return("Scissors");
+                } else if (compAnswer === 4){
+                    return("Lizard");
+                    } else if (compAnswer = 5){
+                        return("Spock");
+}
+
+
+
+/**
+ * Takes userInput from event activation and assigns a value to it.
+ */
+function runGame (userInput){
+    let userAnswer = userInput;
+        if (userAnswer === 'rock'){
+            return("Rock")
+                } else if (userAnswer === 'paper'){
+                    return("Paper")   
+                    } else if (userAnswer === 'scissors'){
+                        return ("Scissors")   
+                        } else if (userAnswer === 'lizard'){
+                            return("Lizard")   
+                            } else if (userAnswer === 'spock'){
+                                return("Spock")   
+    }
 }
 
 /**
- * Generates a random number between 1-5 and assigns a game value to that number.
+ * Takes the values of the user input and computer choice and compares them.
+ * Decides who has won the round.
  */
-function runGame() {
-    let comChoice = Math.floor(Math.random()*5);
-    if (comChoice === 1){
-        console.log("Rock");
-        } else if (comChoice === 2){
-            console.log("Paper")
-            } else if (comChoice === 3){
-                console.log("Scissors")
-                } else if (comChoice === 4){
-                    console.log("Lizard")
-                    } else if (comChoice = 5){
-                        console.log("Spock")
-                    }
-}
+ function compareAnswer(){
+    let userAnswer = userChoice();
+    let compAnswer = compChoice();
+
+    if (userAnswer === compAnswer){
+        console.log("Tie")
+    }
+ }
+

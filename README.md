@@ -189,6 +189,7 @@ The repository can be found here -
 
 ### Content
 - Fix 401 error https://medium.com/@aurelien.delogu/401-error-on-a-webmanifest-file-cb9e3678b9f3
+- Try/Finally https://stackoverflow.com/questions/14102912/execute-statement-after-return-statement-in-javascript
 
 ### Media
 - Game Background: <a href="https://www.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_7743415.htm#query=desert%20background&position=7&from_view=keyword">Image by upklyak</a> on Freepik
