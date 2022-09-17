@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("data-type") === "reset"){ //Restores text-area html to initial value
                     document.getElementById("game-text").innerHTML = "Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!";
                 } else if (this.getAttribute("data-type") === "play"){
-                    compareAnswer();
                 } else {
                     let userInput = this.getAttribute("data-type");
                     runGame(userInput);
@@ -19,50 +18,35 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
-function compChoice();
-let compAnswer = Math.floor(Math.random()*5);
-if (compAnswer === 1){
-    return("Rock");
-        } else if (compAnswer === 2){
-            return("Paper");
-            } else if (compAnswer === 3){
-                return("Scissors");
-                } else if (compAnswer === 4){
-                    return("Lizard");
-                    } else if (compAnswer = 5){
-                        return("Spock");
-}
-
-
-
 /**
  * Takes userInput from event activation and assigns a value to it.
+ * Computer answer is generated from a random number and an assigned value.
  */
 function runGame (userInput){
     let userAnswer = userInput;
-        if (userAnswer === 'rock'){
-            return("Rock")
-                } else if (userAnswer === 'paper'){
-                    return("Paper")   
-                    } else if (userAnswer === 'scissors'){
-                        return ("Scissors")   
-                        } else if (userAnswer === 'lizard'){
-                            return("Lizard")   
-                            } else if (userAnswer === 'spock'){
-                                return("Spock")   
-    }
+    console.log(userAnswer)
+    let compAnswer = Math.floor(Math.random()*5)+1;
+    if (compAnswer === 1){
+        compAnswer = "Rock";
+    } else if (compAnswer === 2){
+        compAnswer = "Paper";
+        } else if (compAnswer === 3){
+            compAnswer = "Scissors";
+            } else if (compAnswer === 4){
+                compAnswer = "Lizard"
+                } else if (compAnswer = 5){
+                    compAnswer = "Spock"
+}
+    console.log(compAnswer)
 }
 
 /**
  * Takes the values of the user input and computer choice and compares them.
  * Decides who has won the round.
  */
- function compareAnswer(){
+ function compareAnswer(compInput){
     let userAnswer = userChoice();
-    let compAnswer = compChoice();
-
-    if (userAnswer === compAnswer){
-        console.log("Tie")
+    let compAnswer = compInput();
     }
- }
+
 
