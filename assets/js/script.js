@@ -40,16 +40,16 @@ function runGame (userInput){
         break;
     }
     console.log(compInput)
+
+    compare(userInput, compInput);
 }
-
-
 
 /**
  * Takes the values of the user input and computer choice and compares them.
  * Decides who has won the round.
  */
- function compare(_runGame){
-    if (userAnswer === compAnswer) {
+ function compare(userInput, compInput){
+    if (userInput === compInput) {
         console.log("Tie")
     }
 }
