@@ -33,29 +33,41 @@
 11. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
-
+The overall project goal is to create a fun, entertaining website where people can play a game and pass the time.
 
 ### User Goals
-
+- To play a game.
+- To learn new rules.
+- To take a break/relax.
 
 ### Site Owner Goals
+- Host a fun website.
+- Enable users to play a game.
+- Pass on game knowledge.
 
 
 ## User Experience
 
 ### Target Audience 
-
+- Younger users who like playing games.
+- Users who are looking for a fun website to pass time on during a break.
+- Older users who are learning about website functionality.
 
 ### User Requrements and Expectations
 
 ### User Stories
 
- 
 #### First Time Users 
- 
+ - To easily understand website function and purpose.
+ - To easily navigate the website to find content.
+ - To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
+
 #### Returning Users 
- 
+ - Continue to play the game.
+ - Beat previous results.
+
 #### Frequent User
+- Check for any new features.
 
 ## Design
 
