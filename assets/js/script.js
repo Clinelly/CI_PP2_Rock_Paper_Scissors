@@ -51,8 +51,59 @@ function runGame (userInput){
  function compare(userInput, compInput){
     if (userInput === compInput) {
         console.log("Tie")
+    } else if (userInput === 'rock') {
+        if (compInput === 'paper'){
+            (console.log('Lose'))
+        } else if (compInput === 'scissors'){
+            (console.log('win'))
+        } else if (compInput === 'lizard'){
+            (console.log('win'))
+        } else {
+            (console.log('lose'))
+        }
+    } else if (userInput === 'paper') {
+        if (compInput === 'scissors'){
+            (console.log('Lose'))
+        } else if (compInput === 'lizard'){
+            (console.log('lose'))
+        } else if (compInput === 'spock'){
+            (console.log('win'))
+        } else {
+            (console.log('win'))
+        }
+    } else if (userInput === 'scissors') {
+        if (compInput === 'rock'){
+            (console.log('Lose'))
+        } else if (compInput === 'paper'){
+            (console.log('win'))
+        } else if (compInput === 'lizard'){
+            (console.log('win'))
+        } else {
+            (console.log('lose'))
+        }
+    } else if (userInput === 'lizard') {
+        if (compInput === 'rock'){
+            (console.log('Lose'))
+        } else if (compInput === 'paper'){
+            (console.log('win'))
+        } else if (compInput === 'spock'){
+            (console.log('win'))
+        } else {
+            (console.log('lose'))
+        }
+    }  else if (userInput === 'spock') {
+        if (compInput === 'rock'){
+            (console.log('win'))
+        } else if (compInput === 'paper'){
+            (console.log('lose'))
+        } else if (compInput === 'scissors'){
+            (console.log('win'))
+        } else {
+            (console.log('lose'))
+        }
     }
-}
+ }
+
 
 function gameSetup() {
     let setup = document.getElementById("game-text")
