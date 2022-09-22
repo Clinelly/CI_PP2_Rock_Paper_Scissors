@@ -24,29 +24,24 @@ document.addEventListener("DOMContentLoaded", function(){
  * Computer answer is generated from a random number and an assigned value.
  */
 function runGame (userInput){
-    let userAnswer = userInput;
-        if (userInput = "rock"){
-            userInput = "Rock"
-        } else if (userInput = "paper"){
-            userInput = "Paper"
-        } else if (userInput = "scissors"){
-            userInput = "Scissors"
-        } else if (userInput = "lizard"){
-            userInput = "Lizard"
-        } else userInput = "Spock"
-    console.log(userAnswer)
-    let compAnswer = Math.floor(Math.random()*5)+1;
-    if (compAnswer === 1){
-        compAnswer = "rock";
-    } else if (compAnswer === 2){
-        compAnswer = "paper";
-        } else if (compAnswer === 3){
-            compAnswer = "scissors";
-            } else if (compAnswer === 4){
-                compAnswer = "lizard"
-                } else compAnswer = "spock"
-    console.log(compAnswer)
+    console.log(userInput);
+
+    let compInput = Math.floor(Math.random()*5)+1;
+    switch(compInput){
+        case 1: compInput = "rock";
+        break;
+        case 2 : compInput = "paper";
+        break;
+        case 3 : compInput = "scissors";
+        break;
+        case 4 : compInput = "lizard";
+        break;
+        case 5 : compInput = "spock";
+        break;
+    }
+    console.log(compInput)
 }
+
 
 
 /**
