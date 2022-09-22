@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
             } else if (this.getAttribute("data-type") === "reset"){ //Restores text-area html to initial value
                     document.getElementById("game-text").innerHTML = "Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!";
                 } else if (this.getAttribute("data-type") === "play"){
+                    gameSetup();
                 } else {
                     let userInput = this.getAttribute("data-type");
                     runGame(userInput);
@@ -56,7 +57,27 @@ function runGame (userInput){
     if (userAnswer === compAnswer) {
         console.log("Tie")
     }
-
 }
 
+function gameSetup() {
+    let setup = document.getElementById("game-text")
+    setup.remove();
 
+    let userArea = document.createElement('span')
+    let userScore = document.createElement('span')
+    let outcome = document.createElement('span')
+    let compScore = document.createElement('span')
+    let compArea = document.createElement('span')
+
+    userArea.innerHTML += "You Chose:";
+    userScore.innerHTML +="Your Score:";
+    outcome.innerHTML += "";
+    compScore.innerHTML += "Computer Score:";
+    compArea.innerHTML += "The Computer Chose:";
+
+    document.getElementById("game-area").appendChild(userArea);
+    document.getElementById("game-area").appendChild(userScore);
+    document.getElementById("game-area").appendChild(outcome);
+    document.getElementById("game-area").appendChild(compScore);
+    document.getElementById("game-area").appendChild(compArea);
+}
