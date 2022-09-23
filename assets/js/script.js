@@ -50,56 +50,56 @@ function runGame (userInput){
  */
  function compare(userInput, compInput){
     if (userInput === compInput) {
-        console.log("tie")
+        return `You chose:${userInput}<br>The Computer chose:${compInput}<br>The result is a Tie!`
     } else if (userInput === 'rock') {
         if (compInput === 'paper'){
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br> Paper covers Rock. You lose!`
         } else if (compInput === 'scissors'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Rock crushes Scissors. You win!`
         } else if (compInput === 'lizard'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Rock crushes Lizard. You win!`
         } else {
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Spock vaporises Rock. You lose!`
         }
     } else if (userInput === 'paper') {
         if (compInput === 'scissors'){
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Scissors cuts Paper. You lose!`
         } else if (compInput === 'lizard'){
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Lizard eats Paper. You lose!`
         } else if (compInput === 'spock'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Paper disproves Spock. You win!`
         } else {
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Paper covers Rock. You win!`
         }
     } else if (userInput === 'scissors') {
         if (compInput === 'rock'){
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Rock crushes Scissors. You lose!`
         } else if (compInput === 'paper'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Scissors cuts Paper. You win!`
         } else if (compInput === 'lizard'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Scissors decapitates Lizard. You win!`
         } else {
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Spock smashes Scissors. You lose!`
         }
     } else if (userInput === 'lizard') {
         if (compInput === 'rock'){
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Rock crushes Scissors. You lose!`
         } else if (compInput === 'paper'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Lizard eats Paper. You win!`
         } else if (compInput === 'spock'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Lizard poisons Spock. You win!`
         } else {
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Rock crushed Lizard. You lose!`
         }
     }  else if (userInput === 'spock') {
         if (compInput === 'rock'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Spock vaporises Rock. You win!`
         } else if (compInput === 'paper'){
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Paper disproves Spock. You lose!`
         } else if (compInput === 'scissors'){
-            (console.log('win'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Spock smashes Scissors. You win!`
         } else {
-            (console.log('lose'))
+            return `You chose:${userInput}<br>The Computer chose:${compInput}<br>Paper disproves Spock. You lose!`
         }
     }
  }
@@ -108,7 +108,7 @@ function runGame (userInput){
  * Creates the game space. Five spans in game-area div to display the game to the user.
  */
 function gameSetup() {
-    let setup = document.getElementById("game-text")
+    let setup = document.getElementById("game-text").innerHTML = ""
     setup.remove();
 
     let userArea = document.createElement('span')
@@ -130,10 +130,11 @@ function gameSetup() {
     document.getElementById("game-area").appendChild(compArea);
 }
 
+
 /**
  * Score function. Increments the score of the computer or user.
  */
 
 function score() {
-    
+
 }
