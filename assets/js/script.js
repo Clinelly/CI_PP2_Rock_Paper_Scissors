@@ -103,7 +103,9 @@ function runGame (userInput){
     result (outcome);
  }
 
-
+/**
+ * Takes the returned value of the compare function and displays it into the game-text.
+ */
  function result(outcome){
     let gameEnd = document.getElementById("game-text");
     gameEnd.innerHTML = outcome.toUpperCase();
@@ -115,12 +117,17 @@ function runGame (userInput){
 function gameSetup() {
     document.getElementById("game-text").innerHTML = ""
 
+    let scoreArea = document.createElement('div')
     let userScore = document.createElement('span')
     let compScore = document.createElement('span')
+    
+    scoreArea.setAttribute('id', 'score-area')
+    userScore.setAttribute('id','user-score')
+    compScore.setAttribute('id','comp-score')
 
-    document.getElementById("game-area").appendChild(userScore);
-    document.getElementById("game-area").appendChild(compScore);
-
+    document.getElementById("game-area").appendChild(scoreArea)
+    document.getElementById("score-area").appendChild(userScore);
+    document.getElementById("score-area").appendChild(compScore);
 
 }
 
