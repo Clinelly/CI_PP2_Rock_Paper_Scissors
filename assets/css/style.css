@@ -28,24 +28,32 @@ header {
     font-size: xx-large;
 }
 
-/*Game area (spans will be created via javascript)*/
+/*Game area */
 #game-area {
-    display: flexbox;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-    height: auto;
     width: 90%;
+    height: auto;
+    margin: auto;
 }
 
-#game-area span {
+/*Score area (div and spans created via javascript)*/
+
+#score-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+#score-area span {
+    border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    border: 2px solid white;
-    margin: auto;
-    width: 15%;
+    width: 10%;
     height: auto;
+    margin: 0 10%;
 }
 
 /*Game text area*/
