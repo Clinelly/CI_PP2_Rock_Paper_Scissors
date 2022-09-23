@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     document.location.reload(true);
                 } else if (this.getAttribute("data-type") === "play"){ // Clears game-text div for game to work.
                     gameSetup();
+                    document.getElementById("play").disabled = true; //Disables play button after clicking.
                 } else {
                     let userInput = this.getAttribute("data-type");
                     runGame(userInput);
