@@ -63,6 +63,7 @@ header {
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    font-size: x-large;
     padding: none;
     margin: 50px auto;
     text-align: center;
@@ -190,11 +191,20 @@ header {
         font-size: small;
     }
 
+    /*Score area (div and spans created via javascript)*/
+
+    #score-area span {
+        font-size: small;
+        width: 30%;
+        height: 50px;
+}
+
     /*Style for text and game area*/
     
     #game-text {
-        line-height: 50px;
+        line-height: 20px;
         width: 90%;
+        font-size: small;
     }
     
     #button-area {
@@ -216,6 +226,7 @@ header {
 
     .btn--pri::after {
         font-size: small;
+        text-transform: lowercase;
     }
 
     /*Style for game options*/
