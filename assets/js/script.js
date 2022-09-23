@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
+playerScore = 0 // Variable for player score to be incremented at game end.
+computerScore = 0 // Variable for computer score to be incremented at game end.
+
 /**
  * Takes userInput from event activation and assigns a value to it.
  * Computer answer is generated from a random number and an assigned value.
@@ -110,12 +113,8 @@ function runGame (userInput){
  function result(outcome){
     let gameEnd = document.getElementById("game-text");
     gameEnd.innerHTML = outcome.toUpperCase();
-    
-    let playerScore = 0;
-    let computerScore = 0;
 
-    incrementScore(playerScore, computerScore);
-
+    incrementScore();
 }
 
 
@@ -143,7 +142,8 @@ function gameSetup() {
  * Score function. Increments the score of the computer or user.
  */
 
-function incrementScore(playerScore, computerScore) {   
+function incrementScore() {
+
     if (outcome.includes(`win`)){
         playerScore++;
     } else if (outcome.includes(`lose`)){
@@ -153,4 +153,17 @@ function incrementScore(playerScore, computerScore) {
     }
     document.getElementById("user-score").innerHTML = `Your Score:<br>${playerScore}`;
     document.getElementById("comp-score").innerHTML = `Computer Score:<br>${computerScore}`;
+    
+    checkScore();
+}
+
+/**
+ * Checks the score and declares game over when threshold has been met.
+ */
+function checkScore () {
+    if (playerScore === 10) {
+        document.getElementById("game-text").innerHTML = "Congratulations! <br> You have won! <br> Press 'Reset' to play again!"
+    } else if (computerScore === 10) {
+        document.getElementById("game-text").innerHTML = "Game Over! <br> You have lost! <br> Press 'Reset' to try again!"
+    }
 }
