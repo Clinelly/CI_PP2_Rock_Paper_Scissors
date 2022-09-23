@@ -110,7 +110,16 @@ function runGame (userInput){
  function result(outcome){
     let gameEnd = document.getElementById("game-text");
     gameEnd.innerHTML = outcome.toUpperCase();
- }
+    
+    if (outcome.includes(`win`)){
+        console.log('+1')
+    } else if (outcome.includes(`lose`)){
+        console.log('-1')
+    } else {
+        console.log('0')
+    }
+}
+
 
 /**
  * Creates the game space by removing inner html of game-text area.
@@ -137,6 +146,6 @@ function gameSetup() {
  * Score function. Increments the score of the computer or user.
  */
 
-function score() {
+function incrementScore() {
 
 }

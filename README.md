@@ -205,9 +205,9 @@ The repository can be found here -
 
 ### Media
 - Game Background: <a href="https://www.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_7743415.htm#query=desert%20background&position=7&from_view=keyword">Image by upklyak</a> on Freepik
-- 404 image: <a href="https://lovepik.com/images/png-404.html">404 Png vectors by Lovepik.com</a>
 
 **404 Page**
+- 404 image: <a href="https://lovepik.com/images/png-404.html">404 Png vectors by Lovepik.com</a>
 
 ## Acknowledgements
 - My mentor, Mo Shami, for pushing me and giving me great advice.
