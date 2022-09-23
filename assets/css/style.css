@@ -84,8 +84,8 @@ header {
 
 .btn--pri {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: greenyellow;
     margin: 15px 10px;
 }
@@ -96,6 +96,7 @@ header {
     font-size: medium;
     position: relative;
     display: block;
+    text-transform: uppercase;
 }
 
 /*Style for game options*/

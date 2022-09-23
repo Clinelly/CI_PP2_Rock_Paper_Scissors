@@ -106,7 +106,7 @@ function runGame (userInput){
 
  function result(outcome){
     let gameEnd = document.getElementById("game-text");
-    gameEnd.innerHTML = outcome;
+    gameEnd.innerHTML = outcome.toUpperCase();
  }
 
 /**
@@ -114,6 +114,14 @@ function runGame (userInput){
  */
 function gameSetup() {
     document.getElementById("game-text").innerHTML = ""
+
+    let userScore = document.createElement('span')
+    let compScore = document.createElement('span')
+
+    document.getElementById("game-area").appendChild(userScore);
+    document.getElementById("game-area").appendChild(compScore);
+
+
 }
 
 
