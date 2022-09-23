@@ -261,10 +261,20 @@ header {
         font-size: small;
     }
 
+    /*Score area (div and spans created via javascript)*/
+
+    #score-area span {
+        font-size: small;
+        width: 40%;
+        height: 50px;
+    }
+    
+
     /*Style for text and game area*/
     
     #game-text {
-        line-height: 50px;
+        line-height: 20px;
+        font-size: small;
         width: 90%;
     }
     
@@ -287,6 +297,7 @@ header {
 
     .btn--pri::after {
         font-size: small;
+        text-transform: lowercase;
     }
 
     /*Style for game options*/
