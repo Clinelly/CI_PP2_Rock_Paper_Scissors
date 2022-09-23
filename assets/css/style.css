@@ -51,7 +51,9 @@ header {
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    width: 10%;
+    text-align: center;
+    font-size: larger;
+    width: 15%;
     height: auto;
     margin: 0 10%;
 }

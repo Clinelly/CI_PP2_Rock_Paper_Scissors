@@ -111,13 +111,11 @@ function runGame (userInput){
     let gameEnd = document.getElementById("game-text");
     gameEnd.innerHTML = outcome.toUpperCase();
     
-    if (outcome.includes(`win`)){
-        console.log('+1')
-    } else if (outcome.includes(`lose`)){
-        console.log('-1')
-    } else {
-        console.log('0')
-    }
+    let playerScore = 0;
+    let computerScore = 0;
+
+    incrementScore(playerScore, computerScore);
+
 }
 
 
@@ -141,11 +139,18 @@ function gameSetup() {
 
 }
 
-
 /**
  * Score function. Increments the score of the computer or user.
  */
 
-function incrementScore() {
-
+function incrementScore(playerScore, computerScore) {   
+    if (outcome.includes(`win`)){
+        playerScore++;
+    } else if (outcome.includes(`lose`)){
+        computerScore++;
+    } else {
+        console.log('0')
+    }
+    document.getElementById("user-score").innerHTML = `Your Score:<br>${playerScore}`;
+    document.getElementById("comp-score").innerHTML = `Computer Score:<br>${computerScore}`;
 }
