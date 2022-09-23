@@ -50,10 +50,10 @@ function runGame (userInput){
  */
  function compare(userInput, compInput){
     if (userInput === compInput) {
-        console.log("Tie")
+        console.log("tie")
     } else if (userInput === 'rock') {
         if (compInput === 'paper'){
-            (console.log('Lose'))
+            (console.log('lose'))
         } else if (compInput === 'scissors'){
             (console.log('win'))
         } else if (compInput === 'lizard'){
@@ -63,7 +63,7 @@ function runGame (userInput){
         }
     } else if (userInput === 'paper') {
         if (compInput === 'scissors'){
-            (console.log('Lose'))
+            (console.log('lose'))
         } else if (compInput === 'lizard'){
             (console.log('lose'))
         } else if (compInput === 'spock'){
@@ -73,7 +73,7 @@ function runGame (userInput){
         }
     } else if (userInput === 'scissors') {
         if (compInput === 'rock'){
-            (console.log('Lose'))
+            (console.log('lose'))
         } else if (compInput === 'paper'){
             (console.log('win'))
         } else if (compInput === 'lizard'){
@@ -83,7 +83,7 @@ function runGame (userInput){
         }
     } else if (userInput === 'lizard') {
         if (compInput === 'rock'){
-            (console.log('Lose'))
+            (console.log('lose'))
         } else if (compInput === 'paper'){
             (console.log('win'))
         } else if (compInput === 'spock'){
@@ -128,4 +128,12 @@ function gameSetup() {
     document.getElementById("game-area").appendChild(outcome);
     document.getElementById("game-area").appendChild(compScore);
     document.getElementById("game-area").appendChild(compArea);
+}
+
+/**
+ * Score function. Increments the score of the computer or user.
+ */
+
+function score() {
+    
 }
