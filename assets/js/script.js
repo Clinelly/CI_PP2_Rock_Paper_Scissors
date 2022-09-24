@@ -162,8 +162,18 @@ function incrementScore() {
  */
 function checkScore () {
     if (playerScore === 10) {
-        document.getElementById("game-text").innerHTML = "Congratulations! <br> You have won! <br> Press 'Reset' to play again!"
+        document.getElementById("game-text").innerHTML = "Congratulations! <br> You have won! <br> Press 'Reset' to play again!";
+        document.getElementById("rock").disabled = true; //Disables button after game ends.
+        document.getElementById("paper").disabled = true;
+        document.getElementById("scissors").disabled = true;
+        document.getElementById("lizard").disabled = true;
+        document.getElementById("spock").disabled = true;
     } else if (computerScore === 10) {
-        document.getElementById("game-text").innerHTML = "Game Over! <br> You have lost! <br> Press 'Reset' to try again!"
+        document.getElementById("game-text").innerHTML = "Game Over! <br> You have lost! <br> Press 'Reset' to try again!";
+        document.getElementById("rock").disabled = true; //Disables button after game ends.
+        document.getElementById("paper").disabled = true; 
+        document.getElementById("scissors").disabled = true;
+        document.getElementById("lizard").disabled = true;
+        document.getElementById("spock").disabled = true;
     }
 }
