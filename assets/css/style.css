@@ -53,8 +53,8 @@ header {
     color: white;
     text-align: center;
     font-size: larger;
-    width: 15%;
-    height: 50px;
+    width: 20%;
+    height: 70px;
     margin: 0 10%;
 }
 
@@ -405,7 +405,26 @@ header {
             font-size: large;
         }
             
+}
+
+/* for laptop screen sizes between 1025px and 1440px wide */
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+
+    /*Score area (div and spans created via javascript)*/
+
+    #score-area span {
+        font-size: large;
+        width: 40%;
+        height: 60px;
+    }
 
 
-
+    /*Style for text and game area*/
+    
+    #game-text {
+        line-height: 40px;
+        width: 90%;
+        font-size: large;
+    }
+        
 }
