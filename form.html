@@ -22,13 +22,33 @@
         <header id="header">
             <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
         </header>
-              <!--Footer-->
+        <!--Form-->
+        <div id ="form-area">
+            <form id ="email-form">
+                <label for="name">Name:</label>
+                <br>
+                <input id="name" type="text" name="name" class="feedback" required>
+                <br>
+                <label for="email">Email Address:</label>
+                <br>
+                <input id="email" type="email" name="email" class="feedback" required>
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" class="feedback" rows="5" cols="30" placeholder="Please leave us any feedback or suggestions you may have!"required></textarea>
+                <br>
+                <input type="submit" id="submit" class="btn btn--sec" value="Send">
+                <a href="index.html" class="btn btn--sec">Go back</a>
+            </form>
+        </div>
+        <!--Footer-->
         <footer id = "footer">
             <a href="https://www.facebook.com/groups/52994828019" target="_blank" aria-label="check out the community on facebook (opens in a new tab)"><i class="fa fa-facebook-square"></i></a>
             <a href="https://www.youtube.com/watch?v=x5Q6-wMx-K8" target="_blank" aria-label="see the rules on youtube (opens in a new tab)"><i class="fa fa-youtube-square"></i></a>
             <a href="https://www.youtube.com/watch?v=FCARADb9asE" target="_blank" aria-label="star trekking on youtube (opens in a new tab)"><i class="fas fa-meteor"></i></a>
+            <a href="form.html" target="_blank" aria-label="contact us"><i class="fas fa-envelope-square"></i></a>
         </footer>
         <!--JavaScript Link-->
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/form.js"></script>
     </body>
     </html>
