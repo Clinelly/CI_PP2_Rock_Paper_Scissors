@@ -127,6 +127,27 @@ header {
     margin: 15px auto;
 }
 
+/* Form page */
+#form-area {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+#email-form {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#email-form label {
+    font-size: larger;
+}
+
 /*Footer*/
 #footer {
     background-color: rgba(0, 0, 0, 0.5);
