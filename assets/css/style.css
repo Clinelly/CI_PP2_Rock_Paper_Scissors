@@ -384,3 +384,28 @@ header {
             width: 70%;
         }    
 }
+
+/* for laptop screen sizes between 769px and 1024px wide. */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+
+        /*Score area (div and spans created via javascript)*/
+
+        #score-area span {
+            font-size: large;
+            width: 40%;
+            height: 60px;
+        }
+    
+    
+        /*Style for text and game area*/
+        
+        #game-text {
+            line-height: 40px;
+            width: 90%;
+            font-size: large;
+        }
+            
+
+
+
+}
