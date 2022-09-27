@@ -144,6 +144,10 @@ header {
     text-align: center;
 }
 
+#submit, #home {
+    width: 25%;
+}
+
 #email-form label {
     font-size: larger;
 }
