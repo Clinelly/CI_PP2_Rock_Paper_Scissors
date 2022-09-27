@@ -25,7 +25,7 @@
         <div id = "game-background">
             <!--Game Text area-->
             <div id = "game-area">
-                <p id = "game-text">Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!</p>
+                <p id = "game-text">Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!<br>If you fancy testing your knowledge instead, press the 'Quiz' button!</p>
             </div>
                     <!--Game Input buttons-->
                     <div id="button-area">
@@ -37,11 +37,13 @@
                     </div>
         </div>
             <div id = "rules-area">
-                <a href="404.html">Test</a>
                 <!--Game option buttons-->
                 <button data-type="play" class="btn btn--sec" id="play">Play</button>
                 <button data-type="rules" class="btn btn--sec" id="rules">Rules</button>
                 <button data-type="reset" class="btn btn--sec" id="reset">Reset</button>
+                <form>
+                    <button id ="quiz-btn" class="btn btn--sec" type="submit" formaction="quiz.html">Quiz</button>
+                </form>
             </div>
         <!--Footer-->
         <footer id = "footer">
