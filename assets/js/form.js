@@ -16,12 +16,13 @@ emailjs.sendForm('contact_service', 'contact_form', this)
  
     btn.value = 'Sending...';
  
-    const serviceID = 'default_service';
+    const serviceID = 'service_hzus4au';
     const templateID = 'contact_form';
  
     emailjs.sendForm(serviceID, templateID, this)
      .then(() => {
        btn.value = 'Send';
+       alert('Thank you for your feedback!')
        
      }, (err) => {
        btn.value = 'Send';
