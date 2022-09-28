@@ -135,3 +135,17 @@ let quizQuestions = [ //Generates the array of questions.
         correctAnswer: "c"
     },
 ]
+
+function generateQuiz(){
+
+    function showQuestions(){
+
+    }
+
+    function showResults {
+
+    }
+
+    showQuestions();
+
+}
