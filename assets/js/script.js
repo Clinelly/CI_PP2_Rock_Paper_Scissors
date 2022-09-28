@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 } else if (this.getAttribute("data-type") === "play"){ // Clears game-text div for game to work.
                     gameSetup();
                     document.getElementById("play").disabled = true; //Disables play button after clicking.
+                    document.getElementById("rock").disabled = false; //Enables button after play button is pressed.
+                    document.getElementById("paper").disabled = false; 
+                    document.getElementById("scissors").disabled = false;
+                    document.getElementById("lizard").disabled = false;
+                    document.getElementById("spock").disabled = false;
                 } else {
                     let userInput = this.getAttribute("data-type");
                     runGame(userInput);
@@ -19,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     }
 })
+
+document.getElementById("rock").disabled = true; //Disables button before game.
+document.getElementById("paper").disabled = true; 
+document.getElementById("scissors").disabled = true;
+document.getElementById("lizard").disabled = true;
+document.getElementById("spock").disabled = true;
 
 playerScore = 0 // Variable for player score to be incremented at game end.
 computerScore = 0 // Variable for computer score to be incremented at game end.
