@@ -142,7 +142,7 @@ function generateQuiz(){
 
     }
 
-    function showResults {
+    function showResults() {
 
     }
 
