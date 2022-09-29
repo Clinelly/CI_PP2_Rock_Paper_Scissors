@@ -1,198 +1,166 @@
-//Waits for DOM to fully load before running script.
-//Gets button elements and adds event-listeners to them.
-document.addEventListener("DOMContentLoaded", function(){
-    let start = document.getElementById("btn-start");
-    start.addEventListener("click", function(){
-        startQuiz();
-        })
-    })
-            
-// Array of questions
-let questions = [ 
+/**
+ * Quiz code sourced from WebDevSimplified (https://www.youtube.com/watch?v=riDzcEQbX6k) and modified for additional functionality
+ */
+
+//Adds event listener to start button to start the game.
+let startButton = document.getElementById('btn-start');
+startButton.addEventListener('click', runGame);
+
+let questions = [ //Question array
     {
         question: "How do lizards smell?",
-        answers: {
-            a: "They lick and 'taste' the air.",
-            b: "They sniff the air through their noses.",
-            c: "They cant. Lizards have no sense of smell."
-        },
-        correctAnswer: "a"
+        answers: [
+            {text: "They lick and 'taste' the air.", correct:  true},
+            {text: "They sniff the air through their noses.", correct:  false},
+            {text: "They cant. Lizards have no sense of smell.", correct:  false},
+        ]
     },
     {
         question: "What is the study of rocks called?",
-        answers: {
-            a: "Geography",
-            b: "Topography",
-            c: "Geology"
-        },
-        correctAnswer: "c"
+        answers: [
+            {text: "Geography", correct:  false},
+            {text: "Topography", correct:  false},
+            {text: "Geology", correct:  true},
+        ]
     },
     {
         question: "What is meant by '4-ply' paper?",
-        answers: {
-            a: "The paper is 4 inches wide.",
-            b: "The paper is 4 layers thick.",
-            c: "The paper can be reused 4 times."
-        },
-        correctAnswer: "b"
+        answers: [
+            {text: "The paper is 4 inches wide.", correct:  false},
+            {text: "The paper is 4 layers thick.", correct:  true},
+            {text: "The paper can be reused 4 times.", correct:  false},
+        ]
     },
     {
         question: "Who played Spock in The Original Series of Star Trek?",
-        answers: {
-            a: "William Shatner.",
-            b: "Leonard Nimoy.",
-            c: "DeForest Kelly."
-        },
-        correctAnswer: "b"
+        answers: [
+            {text: "William Shatner.", correct:  false},
+            {text: "Leonard Nimoy.", correct:  true},
+            {text: "DeForest Kelly.", correct:  false},
+        ]
     },
     {
         question: "What is the plural for 'Scissors'?",
-        answers: {
-            a: "Scissors.",
-            b: "Scissi.",
-            c: "Scissores."
-        },
-        correctAnswer: "a"
+        answers: [
+            {text: "Scissors.", correct:  true},
+            {text: "Scissi.", correct:  false},
+            {text: "Scissores.",correct:  false},
+        ]
     },
     {
         question: "What is the name of the largest lizard in the world?",
-        answers: {
-            a: "Komodo Dragon.",
-            b: "Bearded Dragon.",
-            c: "Chinese Water Dragon."
-        },
-        correctAnswer: "a"
+        answers: [
+            {text: "Komodo Dragon.", correct:  true},
+            {text: "Bearded Dragon.", correct:  false},
+            {text: "Chinese Water Dragon.", correct:  false},
+        ]
     },
     {
         question: "What is the name for the Japanese art of folding paper?",
-        answers: {
-            a: "Shigaraki.",
-            b: "Kintsugi.",
-            c: "Origami."
-        },
-        correctAnswer: "c"
+        answers: [
+            {text: "Shigaraki.", correct:  false},
+            {text: "Kintsugi.", correct:  false},
+            {text: "Origami.", correct:  true},
+        ]
     },
     {
         question: "What is the 'The Rock's' real name?",
-        answers: {
-            a: "Vin Diesel.",
-            b: "Dawyne Johnson.",
-            c: "Jason Momoa."
-        },
-        correctAnswer: "b"
+        answers: [
+            {text: "Vin Diesel.", correct:  false},
+            {text: "Dawyne Johnson.", correct:  true},
+            {text: "Jason Momoa.", correct:  false},
+        ]
     },
     {
         question: "When were scissors first thought to be invented?",
-        answers: {
-            a: "4000 BC.",
-            b: "1100 AD.",
-            c: "1874 AD."
-        },
-        correctAnswer: "a"
+        answers: [
+            {text: "4000 BC.", correct:  true},
+            {text: "1100 AD.", correct:  false},
+            {text: "1874 AD.", correct:  false},
+        ]
     },
     {
         question: "What was Spock's role on the USS Enterprise?",
-        answers: {
-            a: "Pilot.",
-            b: "Medical Officer.",
-            c: "Science Officer."
-        },
-        correctAnswer: "c"
+        answers:[
+            {text: "Pilot.", correct:  false},
+            {text: "Medical Officer.", correct:  false},
+            {text: "Science Officer.", correct:  true},
+        ]
     },
     {
         question: "Approximately how many species of Lizard exist worldwide?",
-        answers: {
-            a: "55,000.",
-            b: "65,000.",
-            c: "75,000."
-        },
-        correctAnswer: "b"
+        answers: [
+            {text: "55,000.", correct:  false},
+            {text: "65,000.", correct:  true},
+            {text: "75,000.", correct:  false},
+        ]
     },
     {
         question: "What species of alien is Spock?",
-        answers: {
-            a: "Andorian.",
-            b: "Klingon.",
-            c: "Vulcan."
-        },
-        correctAnswer: "c"
+        answers: [
+            {text: "Andorian.", correct:  false},
+            {text: "Klingon.", correct:  false},
+            {text: "Vulcan.", correct:  true},
+        ]
     },
     {
         question: "What is a 'Rocky Road'?",
-        answers: {
-            a: "A dessert made of marshmallows, chocolate and dried fruit.",
-            b: "A 2013 action film starring Uma Thurman and Ewan McGregor.",
-            c: "A species of flower native to the mountainous regions of South America."
-        },
-        correctAnswer: "a"
+        answers: [
+            {text: "A dessert made of marshmallows, chocolate and dried fruit.", correct:  true},
+            {text: "A 2013 action film starring Uma Thurman and Ewan McGregor.", correct:  false},
+            {text: "A species of flower native to the mountainous regions of South America.", correct:  false},
+        ]
     },
     {
         question: "What is the name of fictional paper company in the American TV series 'The Office'?",
-        answers: {
-            a: "Paper, Pens & Co.",
-            b: "Dunder Mifflin.",
-            c: "Regional Office Supplies Ltd."
-        },
-        correctAnswer: "b"
+        answers: [
+            {text: "Paper, Pens & Co.", correct:  false},
+            {text: "Dunder Mifflin.", correct:  true},
+            {text: "Regional Office Supplies Ltd.", correct:  false},
+        ]
     },
     {
         question: "Who portrayed Edward Scissorhands in the 1990 film by Tim Burton?",
-        answers: {
-            a: "Tom Cruise.",
-            b: "John Travolta.",
-            c: "Johnny Depp."
-        },
-        correctAnswer: "c"
+        answers: [
+            {text: "Tom Cruise.", correct:  false},
+            {text: "John Travolta.", correct:  false},
+            {text: "Johnny Depp.", correct:  true},
+        ]
     },
 ]
 
-function startQuiz () {
-    let questionArea = document.getElementById("quiz-area")
+//Defines the question area that can holds the question text.
+let questionArea = document.getElementById('question-area');
 
-    questionArea.innerHTML = ""
+//Sets both variables to be used by functions later
+let randomQuestion, currentQuestion;
 
-    let previousButton = document.createElement('button');
-    let nextButton = document.createElement('button');
-    
-    previousButton.setAttribute('id', 'btn-pre');
-    previousButton.setAttribute('class', 'btn');
-    previousButton.setAttribute('class', 'btn--sec');
-    previousButton.innerHTML = "Previous<br>Question";
-    nextButton.setAttribute('id','btn-nxt');
-    nextButton.setAttribute('class','btn');
-    nextButton.setAttribute('class', 'btn--sec');
-    nextButton.innerHTML = "Next<br>Question"
+//Sets definitions to elements used for the quiz
+let questionText = document.getElementById('question')
+let answerButtons = document.getElementById('button-area')
 
-    document.getElementById("quiz-area").appendChild(previousButton)
-    document.getElementById("quiz-area").appendChild(nextButton)
 
-    generateQuestions(questionArea);
+function runGame(){
+    startButton.classList.add('hide'); //Hides start button.
+    questionArea.classList.remove('hide'); //Reveals question area.
+    randomQuestion = questions.sort(() => Math.random() - .5); //Randomises questions
+    currentQuestion = 0; //Starts from first question of array
+    nextQuestion();
+
 }
 
-function generateQuestions(questionArea) {
-    let output = [];
-    let answers;
-        for (let i=0; i<questions.length; i++){
-            answers = [];
-            for (letter in questions[0].answers){
-                
-				// ...add an html radio button
-				answers.push(
-					'<label>'
-						+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
-						+ letter + ': '
-						+ questions[0].answers[letter]
-					+ '</label>'
-				);
-			}
+function nextQuestion(){
+    showQuestion(randomQuestion[currentQuestion]);//Shows the next question in the array
+}
 
-			// add this question and its answers to the output
-			output.push(
-				'<div class="question">' + questions[0].question + '</div>'
-				+ '<div class="answers">' + answers.join('') + '</div>'
-			);
-		}
+function showQuestion(question){
+    questionText.innerText = question.question;
+}
 
-		// finally combine our output list into one string of html and put it on the page
-		questionArea.innerHTML = output.join('');
-	}
+function previousQuestion(){
+
+}
+
+function userAnswer() {
+
+}
