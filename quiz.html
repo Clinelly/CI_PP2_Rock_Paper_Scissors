@@ -22,16 +22,27 @@
         <header id="header">
             <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
         </header>
-        <!--Form-->
-        <div id ="quiz-area">
-            <p>So you've crushed some scissors and covered some rocks; but are you truly knowledgeable in all things?<br>Take our trivia quiz and find out!</p>
-            <button id="btn-start" class="btn btn--sec" data-type="next">Start<br>Quiz!</button>
+        <!--Quiz Area-->
+        <div id ="quiz-background">
+            <div id = "question-area">
+                <div id = "question">
+                    <p>So you've crushed a pair of scissors, covered some rocks and decapitated a lizard;<br>but can you disprove Spock?<br>Take our trivia quiz and find out!</p>
+                </div> 
+            </div>
+            <div id = "button-area">
+                <button id="ans-btn-1" class="btn btn--sec">Answer 1</button>
+                <button id="ans-btn-2" class="btn btn--sec">Answer 2</button>
+                <button id="ans-btn-3" class="btn btn--sec">Answer 3</button>
+            </div>
         </div>
         <div id="home-area">
-            <form>
-                <button id ="home" class="btn btn--sec" type="submit" formaction="index.html">Home</button>
-            </form>
+            <button id="btn-prev" class="btn btn--sec">Previous</button>
+            <button id="btn-start" class="btn btn--sec">Start<br>Quiz!</button>
+            <button id="btn-next" class="btn btn--sec">Next</button>
         </div>
+        <form>
+            <button id ="home" class="btn btn--sec" type="submit" formaction="index.html">Home</button>
+        </form>
         <!--Footer-->
         <footer id = "footer">
             <a href="https://www.facebook.com/groups/52994828019" target="_blank" aria-label="check out the community on facebook (opens in a new tab)"><i class="fa fa-facebook-square"></i></a>
