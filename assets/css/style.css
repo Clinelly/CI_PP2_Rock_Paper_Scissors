@@ -152,6 +152,11 @@ header {
     font-size: larger;
 }
 
+#form-home {
+    margin: auto;
+    text-align: center;
+}
+
 /*Quiz Page*/
 #quiz-intro {
     border: 2px solid white;
