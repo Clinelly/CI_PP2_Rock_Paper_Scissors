@@ -235,12 +235,26 @@ header {
 
 .correct {
     background-color: green;
-    color: aliceblue;
+    color: black;
 }
 
 .incorrect {
     background-color: red;
-    color: aliceblue;
+    color: black;
+}
+
+/*Progress Bar*/
+
+#quiz-progress {
+    width: 100%;
+    background-color: whitesmoke;
+    margin: auto;
+}
+#quiz-bar {
+    width: 6.7%;
+    background-color: aqua;
+    height: 30px;
+    margin: auto;
 }
 
 /*Hide class*/

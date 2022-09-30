@@ -148,9 +148,15 @@ let questionText = document.getElementById('question');
 let answerButtons = document.getElementById('button-area-quiz');
 let controlButtons = document.getElementById('control-area')
 
+//Progress bar variables
+let outerBar = document.getElementById('quiz-progress');
+let innerBar = document.getElementById('quiz-bar');
+
 function runGame(){
     startButton.classList.add('hide'); //Hides start button.
     questionArea.classList.remove('hide'); //Reveals question area.
+    outerBar.classList.remove('hide'); //Reveals progress bar
+    innerBar.classList.remove('hide');
     randomQuestion = questions.sort(() => Math.random() - .5); //Randomises questions
     currentQuestion = 0; //Starts from first question of array
     nextQuestion();
