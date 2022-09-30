@@ -220,6 +220,13 @@ header {
     text-align: center;
 }
 
+#btn-start {
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
 .btn-quiz {
     width: 300px;
     font-size: x-large;
