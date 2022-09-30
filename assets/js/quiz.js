@@ -135,6 +135,7 @@ let nextButton = document.getElementById('btn-next');
 nextButton.addEventListener('click', () =>{
     currentQuestion++;
     nextQuestion();
+    progressBar();
 })
 
 //Defines the question area that can holds the question text.
@@ -151,6 +152,7 @@ let controlButtons = document.getElementById('control-area')
 //Progress bar variables
 let outerBar = document.getElementById('quiz-progress');
 let innerBar = document.getElementById('quiz-bar');
+let barWidth = 1;
 
 function runGame(){
     startButton.classList.add('hide'); //Hides start button.
@@ -191,7 +193,6 @@ function reset(){//Resets quiz elements when new question is selected
     }
 }
 
-
 function userAnswer(event){
     let buttonChoice = event.target;
     let correct = buttonChoice.dataset.correct; //Takes assigned 'correct' dataset and adds it to the 'correct' variable
@@ -218,4 +219,24 @@ function setCorrectIncorrect(element, correct) { //Adds a class to selected elem
 function clearCorrectIncorrect(element) { //Clears assigned class list each time a question is displayed
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+
+//Function which progresses the quiz bar.
+function progressBar() {
+    let barElement = document.getElementById("quiz-bar");
+    let width = barWidth;
+    let id = setInterval(frame, 1);
+    let widthIncrement = 1;
+
+    barWidth = width + widthIncrement;
+
+    function frame(){
+        if (width >= barWidth || barWidth > 100) {
+            clearInterval(id);
+        } else {
+            width ++;
+            barElement.style.width = 'Q:' + width;
+            barElement.innerHTML = 'Q:' + width * 1;
+        }
+    }
 }

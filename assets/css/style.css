@@ -249,6 +249,7 @@ header {
     width: 100%;
     background-color: whitesmoke;
     margin: auto;
+    color: black;
 }
 #quiz-bar {
     width: 6.7%;
