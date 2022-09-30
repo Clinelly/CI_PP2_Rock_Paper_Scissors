@@ -145,7 +145,7 @@ let randomQuestion, currentQuestion;
 
 //Sets definitions to elements used for the quiz
 let questionText = document.getElementById('question');
-let answerButtons = document.getElementById('button-area');
+let answerButtons = document.getElementById('button-area-quiz');
 let controlButtons = document.getElementById('control-area')
 
 function runGame(){
@@ -169,6 +169,7 @@ function showQuestion(question){
         button.innerText = answers.text;//Displays answer text on button
         button.classList.add('btn');//Adds class to buttons for styling
         button.classList.add('btn--sec');
+        button.classList.add('btn-quiz');
         if (answers.correct){
             button.dataset.correct = answers.correct;//Adds dataset for correct answers to differentiate between correct and incorrect answers
         }

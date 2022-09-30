@@ -153,17 +153,26 @@ header {
 }
 
 /*Quiz Page*/
-#quiz-background {
+#quiz-intro {
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    width: 60%;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+    font-size: larger;
+}
+#quiz-background {
     width: 100%;
     height: auto;
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
 }
 
 #question-area{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     width: 60%;
     height: auto;
@@ -172,19 +181,24 @@ header {
 }
 
 #question {
-    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     width: 60%;
     height: auto;
     margin: auto;
     text-align: center;
+    font-size: x-large;
 }
 
-#button-area {
-    width: 100%;
+#button-area-quiz {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
     height: auto;
     margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #control-area {
@@ -201,12 +215,20 @@ header {
     text-align: center;
 }
 
+.btn-quiz {
+    width: 300px;
+    font-size: x-large;
+    height: auto;
+}
+
 .correct {
     background-color: green;
+    color: aliceblue;
 }
 
 .incorrect {
     background-color: red;
+    color: aliceblue;
 }
 
 /*Hide class*/
