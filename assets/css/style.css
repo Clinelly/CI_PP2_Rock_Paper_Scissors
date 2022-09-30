@@ -201,6 +201,14 @@ header {
     text-align: center;
 }
 
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
 /*Hide class*/
 .hide {
     display: none;
