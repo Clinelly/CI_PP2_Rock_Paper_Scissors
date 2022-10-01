@@ -202,22 +202,22 @@ function userAnswer(event){
         quizEnd();
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide')
-    } 
+    }
+    correct ? incrementScore(): incrementWrong();
 }
+
+function incrementScore() {
+    userScore++;
+}
+
+
 
 function setCorrectIncorrect(element, correct) { //Adds a class to selected elements based on their data types when selected.
     clearCorrectIncorrect(element);
     if (correct){
         element.classList.add('correct'); //Adds green background
-        incrementScore(element); 
     } else {
-        element.classList.add('incorrect');  //Adds red background
-    }
-}
-
-function incrementScore (element){
-    if (element.classList.contains('correct')){
-        userScore ++;
+        element.classList.add('incorrect');//Adds red background
     }
 }
 
