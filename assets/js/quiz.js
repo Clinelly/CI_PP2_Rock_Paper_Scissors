@@ -157,6 +157,7 @@ function runGame(){
     innerBar.classList.remove('hide');
     randomQuestion = questions.sort(() => Math.random() - .5); //Randomises questions
     currentQuestion = 0; //Starts from first question of array
+    progressBar();
     nextQuestion();
 
 }
@@ -220,11 +221,11 @@ function clearCorrectIncorrect(element) { //Clears assigned class list each time
 //Progress bar variables
 let outerBar = document.getElementById('quiz-progress');
 let innerBar = document.getElementById('quiz-bar');
-currentQuestion = 0
-let maxQuestions = 15
+let questionNo = document.getElementById('q-no');
+let maxQuestions = 14
 
 //Function which progresses the quiz bar.
 function progressBar() {
     innerBar.style.width = `${(currentQuestion / maxQuestions) * 100}%`;
-    innerBar.innerHTML = `Q: ${currentQuestion}`;
+    questionNo.innerHTML = `Q: ${currentQuestion +1}`;
 }
