@@ -6,7 +6,7 @@
 let startButton = document.getElementById('btn-start');
 startButton.addEventListener('click', runGame);
 
-let questions = [ //Question array
+const questions = [ //Question array
     {
         question: "How do lizards smell?",
         answers: [
@@ -149,10 +149,6 @@ let questionText = document.getElementById('question');
 let answerButtons = document.getElementById('button-area-quiz');
 let controlButtons = document.getElementById('control-area')
 
-//Progress bar variables
-let outerBar = document.getElementById('quiz-progress');
-let innerBar = document.getElementById('quiz-bar');
-let barWidth = 1;
 
 function runGame(){
     startButton.classList.add('hide'); //Hides start button.
@@ -221,22 +217,14 @@ function clearCorrectIncorrect(element) { //Clears assigned class list each time
     element.classList.remove('incorrect');
 }
 
+//Progress bar variables
+let outerBar = document.getElementById('quiz-progress');
+let innerBar = document.getElementById('quiz-bar');
+currentQuestion = 0
+let maxQuestions = 15
+
 //Function which progresses the quiz bar.
 function progressBar() {
-    let barElement = document.getElementById("quiz-bar");
-    let width = barWidth;
-    let id = setInterval(frame, 1);
-    let widthIncrement = 1;
-
-    barWidth = width + widthIncrement;
-
-    function frame(){
-        if (width >= barWidth || barWidth > 100) {
-            clearInterval(id);
-        } else {
-            width ++;
-            barElement.style.width = 'Q:' + width;
-            barElement.innerHTML = 'Q:' + width * 1;
-        }
-    }
+    innerBar.style.width = `${(currentQuestion / maxQuestions) * 100}%`;
+    innerBar.innerHTML = `Q: ${currentQuestion}`;
 }
