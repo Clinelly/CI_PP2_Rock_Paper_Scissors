@@ -147,8 +147,8 @@ let randomQuestion, currentQuestion;
 //Sets definitions to elements used for the quiz
 let questionText = document.getElementById('question');
 let answerButtons = document.getElementById('button-area-quiz');
-let controlButtons = document.getElementById('control-area')
-
+let controlButtons = document.getElementById('control-area');
+let userScore = 0
 
 function runGame(){
     startButton.classList.add('hide'); //Hides start button.
@@ -199,6 +199,7 @@ function userAnswer(event){
     if (randomQuestion.length > currentQuestion +1){
         nextButton.classList.remove('hide');     
     } else {
+        quizEnd();
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide')
     } 
@@ -208,8 +209,15 @@ function setCorrectIncorrect(element, correct) { //Adds a class to selected elem
     clearCorrectIncorrect(element);
     if (correct){
         element.classList.add('correct'); //Adds green background
+        incrementScore(element); 
     } else {
-        element.classList.add('incorrect');//Adds red background
+        element.classList.add('incorrect');  //Adds red background
+    }
+}
+
+function incrementScore (element){
+    if (element.classList.contains('correct')){
+        userScore ++;
     }
 }
 
@@ -228,4 +236,8 @@ let maxQuestions = 14
 function progressBar() {
     innerBar.style.width = `${(currentQuestion / maxQuestions) * 100}%`;
     questionNo.innerHTML = `Q: ${currentQuestion +1}`;
+}
+
+function quizEnd(){
+    questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You scored ${userScore} out of 15. <br> Press Restart to try again!`
 }

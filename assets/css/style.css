@@ -140,7 +140,7 @@ header {
     color: white;
     width: 100%;
     height: auto;
-    margin: auto;
+    margin: 5% auto;
     text-align: center;
 }
 
@@ -149,7 +149,17 @@ header {
 }
 
 #email-form label {
-    font-size: larger;
+    font-size: x-large;
+    width: 30%;
+}
+
+#email-form input {
+    width: 30%;
+}
+
+#email-form textarea {
+    width: 30%;
+    height: 30%;
 }
 
 #form-home {
@@ -176,7 +186,6 @@ header {
 }
 
 #question-area{
-    border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     width: 60%;
@@ -195,7 +204,6 @@ header {
 }
 
 #button-area-quiz {
-    border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
     width: 60%;
     height: auto;
