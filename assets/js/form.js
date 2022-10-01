@@ -22,10 +22,23 @@
        btn.value = 'Send';
        document.getElementById('email-form').reset()
        
-       alert('Thank you for your feedback!')
+      thankYou();
        
      }, (err) => {
        btn.value = 'Send';
        alert(JSON.stringify(err));
      });
  });
+
+ function thankYou() {
+    let message = `
+      <div class = 'thank-you'>
+        <img src="/assets/images/spock_thanks.webp" alt = "Spock giving the Vulcan salute">
+        <p>Thank you for your feedback! May you live long and prosper!</p>
+      </div>
+      <form id ="form-home">
+        <button id ="home" class="btn btn--sec" type="submit" formaction="index.html">Home</button>
+      </form>`;
+
+      document.getElementById('form-area').innerHTML = message;
+ }

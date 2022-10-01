@@ -167,6 +167,29 @@ header {
     text-align: center;
 }
 
+.thank-you {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.thank-you img {
+    height: 40%;
+    width: 40%;
+    margin: auto;
+}
+
+.thank-you p {
+    color: white;
+    margin: 5% auto;
+    text-align: center;
+    font-size: larger;
+}
+
 /*Quiz Page*/
 #quiz-intro {
     border: 2px solid white;
