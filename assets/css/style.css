@@ -781,7 +781,40 @@ header {
         width: 90%;
             font-size: large;
     }
+        
+    /* Form page */
+    #form-area {
+        width: 80%;
+    }
             
+    #submit, #home {
+        width: 40%;
+    }
+            
+    #email-form label {
+        font-size: medium;
+        width: 60%;
+    }
+            
+    #email-form input {
+        width: 60%;
+    }
+            
+    #email-form textarea {
+        width: 60%;
+        height: 60%;
+    }
+            
+    .thank-you img {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+    }
+            
+    .thank-you p {
+        font-size: medium;
+    }
+                      
 }
 
 /* for laptop screen sizes between 1025px and 1440px wide */
