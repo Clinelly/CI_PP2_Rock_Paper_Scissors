@@ -34,7 +34,7 @@
     let message = `
       <div class = 'thank-you'>
         <img src="/assets/images/spock_thanks.webp" alt = "Spock giving the Vulcan salute">
-        <p>Thank you for your feedback! May you live long and prosper!</p>
+        <p>Thank you for your feedback!<br>May you live long and prosper!</p>
       </div>
       <form id ="form-home">
         <button id ="home" class="btn btn--sec" type="submit" formaction="index.html">Home</button>

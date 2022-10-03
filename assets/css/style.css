@@ -144,6 +144,14 @@ header {
     text-align: center;
 }
 
+#email-form h2{
+    text-shadow: 1px 1px blue;
+}
+
+#email-form p {
+    text-decoration: underline;
+}
+
 #submit, #home {
     width: 25%;
 }
