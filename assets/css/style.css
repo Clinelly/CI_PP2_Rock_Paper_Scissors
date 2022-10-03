@@ -638,83 +638,149 @@ header {
 /* for tablet screen sizes between 426px and 769px wide. */
 @media screen and (min-width: 426px) and (max-width: 769px) {
 
-        /*Header*/
-        header {
-            font-size: large;
-        }
+    /*Header*/
+    header {
+        font-size: large;
+    }
 
-        /*Score area (div and spans created via javascript)*/
+    /*Score area (div and spans created via javascript)*/
 
-        #score-area span {
-            font-size: medium;
-            width: 40%;
-            height: 60px;
-        }
+    #score-area span {
+        font-size: medium;
+        width: 40%;
+        height: 60px;
+    }
     
     
-        /*Style for text and game area*/
+    /*Style for text and game area*/
         
-        #game-text {
-            line-height: 30px;
-            width: 90%;
-            font-size: medium;
-        }
+    #game-text {
+        line-height: 30px;
+        width: 90%;
+        font-size: medium;
+    }
         
-        #button-area {
-            width: 100%;
-        }   
+    #button-area {
+        width: 100%;
+    }   
     
-        /*Game Buttons*/
-        .btn {
-            font-size: large;
-        }
+    /*Game Buttons*/
+    .btn {
+        font-size: large;
+    }
     
-        .btn--pri {
-            width: 90px;
-            height: 90px;
-            margin: 5px 10px;
-        }
+    .btn--pri {
+        width: 90px;
+        height: 90px;
+        margin: 5px 10px;
+    }
     
-        .btn--pri::after {
-            font-size: small;
-        }
+    .btn--pri::after {
+        font-size: small;
+    }
     
-        /*Style for game options*/
-        #rules-area {
-            width: 90%;
-        }
+    /*Style for game options*/
+    #rules-area {
+        width: 90%;
+    }
     
-        .btn--sec {
-            font-size: large;
-            width: 100px;
-            height: 80px;
-        }
+    .btn--sec {
+        font-size: large;
+        width: 100px;
+        height: 80px;
+    }
     
-        /*Error 404 page*/
-        #error-area{
-            width: 70%;
-        }    
+    /*Error 404 page*/
+    #error-area{
+        width: 70%;
+    }
+    
+    /*Quiz Page*/
+    #quiz-intro p{
+        font-size: medium;
+    }
+        
+    #question {
+        font-size: medium;
+    }     
+        
+    #control-area {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+        
+    #btn-start {
+        width: 100px;
+        height: 100px;
+    }
+        
+    .btn-quiz {
+        width: 200px;
+        font-size: small;
+    }
+        
+    /*Progress Bar*/
+        
+    #quiz-bar {
+        height: 15px;
+    }
+        
+    /* Form page */
+    #form-area {
+        width: 80%;
+    }
+        
+    #submit, #home {
+        width: 40%;
+    }
+        
+    #email-form label {
+        font-size: medium;
+        width: 60%;
+    }
+        
+    #email-form input {
+        width: 60%;
+    }
+        
+    #email-form textarea {
+        width: 60%;
+        height: 60%;
+    }
+        
+    .thank-you img {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+    }
+        
+    .thank-you p {
+        font-size: medium;
+    }
+           
 }
 
 /* for laptop screen sizes between 769px and 1024px wide. */
 @media screen and (min-width: 769px) and (max-width: 1025px) {
 
-        /*Score area (div and spans created via javascript)*/
+    /*Score area (div and spans created via javascript)*/
 
-        #score-area span {
-            font-size: large;
-            width: 40%;
-            height: 60px;
-        }
+    #score-area span {
+        font-size: large;
+        width: 40%;
+        height: 60px;
+    }
     
     
-        /*Style for text and game area*/
+    /*Style for text and game area*/
         
-        #game-text {
-            line-height: 40px;
-            width: 90%;
+    #game-text {
+        line-height: 40px;
+        width: 90%;
             font-size: large;
-        }
+    }
             
 }
 
