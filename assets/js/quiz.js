@@ -12,7 +12,7 @@ const questions = [ //Question array
         answers: [
             {text: "They lick and 'taste' the air.", correct:  true},
             {text: "They sniff the air through their noses.", correct:  false},
-            {text: "They cant. Lizards have no sense of smell.", correct:  false}
+            {text: "They cant. Lizards have no sense of smell.", correct:  false},
         ]
     },
     {
@@ -20,7 +20,7 @@ const questions = [ //Question array
         answers: [
             {text: "Geography", correct:  false},
             {text: "Topography", correct:  false},
-            {text: "Geology", correct:  true}
+            {text: "Geology", correct:  true},
         ]
     },
     {
@@ -28,7 +28,7 @@ const questions = [ //Question array
         answers: [
             {text: "The paper is 4 inches wide.", correct:  false},
             {text: "The paper is 4 layers thick.", correct:  true},
-            {text: "The paper can be reused 4 times.", correct:  false}
+            {text: "The paper can be reused 4 times.", correct:  false},
         ]
     },
     {
@@ -36,7 +36,7 @@ const questions = [ //Question array
         answers: [
             {text: "William Shatner.", correct:  false},
             {text: "Leonard Nimoy.", correct:  true},
-            {text: "DeForest Kelly.", correct:  false}
+            {text: "DeForest Kelly.", correct:  false},
         ]
     },
     {
@@ -44,7 +44,7 @@ const questions = [ //Question array
         answers: [
             {text: "Scissors.", correct:  true},
             {text: "Scissi.", correct:  false},
-            {text: "Scissores.",correct:  false}
+            {text: "Scissores.",correct:  false},
         ]
     },
     {
@@ -52,7 +52,7 @@ const questions = [ //Question array
         answers: [
             {text: "Komodo Dragon.", correct:  true},
             {text: "Bearded Dragon.", correct:  false},
-            {text: "Chinese Water Dragon.", correct:  false}
+            {text: "Chinese Water Dragon.", correct:  false},
         ]
     },
     {
@@ -60,7 +60,7 @@ const questions = [ //Question array
         answers: [
             {text: "Shigaraki.", correct:  false},
             {text: "Kintsugi.", correct:  false},
-            {text: "Origami.", correct:  true}
+            {text: "Origami.", correct:  true},
         ]
     },
     {
@@ -68,7 +68,7 @@ const questions = [ //Question array
         answers: [
             {text: "Vin Diesel.", correct:  false},
             {text: "Dawyne Johnson.", correct:  true},
-            {text: "Jason Momoa.", correct:  false}
+            {text: "Jason Momoa.", correct:  false},
         ]
     },
     {
@@ -76,7 +76,7 @@ const questions = [ //Question array
         answers: [
             {text: "4000 BC.", correct:  true},
             {text: "1100 AD.", correct:  false},
-            {text: "1874 AD.", correct:  false}
+            {text: "1874 AD.", correct:  false},
         ]
     },
     {
@@ -84,7 +84,7 @@ const questions = [ //Question array
         answers:[
             {text: "Pilot.", correct:  false},
             {text: "Medical Officer.", correct:  false},
-            {text: "Science Officer.", correct:  true}
+            {text: "Science Officer.", correct:  true},
         ]
     },
     {
@@ -92,7 +92,7 @@ const questions = [ //Question array
         answers: [
             {text: "55,000.", correct:  false},
             {text: "65,000.", correct:  true},
-            {text: "75,000.", correct:  false}
+            {text: "75,000.", correct:  false},
         ]
     },
     {
@@ -100,7 +100,7 @@ const questions = [ //Question array
         answers: [
             {text: "Andorian.", correct:  false},
             {text: "Klingon.", correct:  false},
-            {text: "Vulcan.", correct:  true}
+            {text: "Vulcan.", correct:  true},
         ]
     },
     {
@@ -108,7 +108,7 @@ const questions = [ //Question array
         answers: [
             {text: "A dessert made of marshmallows, chocolate and dried fruit.", correct:  true},
             {text: "A 2013 action film starring Uma Thurman and Ewan McGregor.", correct:  false},
-            {text: "A species of flower native to the mountainous regions of South America.", correct:  false}
+            {text: "A species of flower native to the mountainous regions of South America.", correct:  false},
         ]
     },
     {
@@ -116,7 +116,7 @@ const questions = [ //Question array
         answers: [
             {text: "Paper, Pens & Co.", correct:  false},
             {text: "Dunder Mifflin.", correct:  true},
-            {text: "Regional Office Supplies Ltd.", correct:  false}
+            {text: "Regional Office Supplies Ltd.", correct:  false},
         ]
     },
     {
@@ -124,7 +124,7 @@ const questions = [ //Question array
         answers: [
             {text: "Tom Cruise.", correct:  false},
             {text: "John Travolta.", correct:  false},
-            {text: "Johnny Depp.", correct:  true}
+            {text: "Johnny Depp.", correct:  true},
         ]
     },
 ]
@@ -145,9 +145,9 @@ let questionArea = document.getElementById('question-area');
 let randomQuestion, currentQuestion;
 
 //Sets definitions to elements used for the quiz
-let questionText = document.getElementById('question');
-let answerButtons = document.getElementById('button-area-quiz');
-let controlButtons = document.getElementById('control-area');
+const questionText = document.getElementById('question');
+const answerButtons = document.getElementById('button-area-quiz');
+const controlButtons = document.getElementById('control-area');
 let correctScore = 0;
 let incorrectScore = 0;
 
@@ -241,6 +241,12 @@ function progressBar() {
     questionNo.innerHTML = `Q: ${currentQuestion +1}`;
 }
 
-function quizEnd(){
+function quizEnd() {
     questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You answered ${correctScore} questions correctly.<br>You answered ${incorrectScore} questions incorrectly. <br> Press Restart to try again!`
+    scoreReset();
+}
+
+function scoreReset() {
+    incorrectScore = 0;
+    correctScore = 0;
 }
