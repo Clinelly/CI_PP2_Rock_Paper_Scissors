@@ -148,7 +148,8 @@ let randomQuestion, currentQuestion;
 let questionText = document.getElementById('question');
 let answerButtons = document.getElementById('button-area-quiz');
 let controlButtons = document.getElementById('control-area');
-let userScore = 0
+let correctScore = 0;
+let incorrectScore = 0;
 
 function runGame(){
     startButton.classList.add('hide'); //Hides start button.
@@ -207,10 +208,12 @@ function userAnswer(event){
 }
 
 function incrementScore() {
-    userScore++;
+    correctScore++;
 }
 
-
+function incrementWrong(){
+    incorrectScore++;
+}
 
 function setCorrectIncorrect(element, correct) { //Adds a class to selected elements based on their data types when selected.
     clearCorrectIncorrect(element);
@@ -239,5 +242,5 @@ function progressBar() {
 }
 
 function quizEnd(){
-    questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You scored ${userScore} out of 15. <br> Press Restart to try again!`
+    questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You answered ${correctScore} questions correctly.<br>You answered ${incorrectScore} questions incorrectly. <br> Press Restart to try again!`
 }
