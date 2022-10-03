@@ -139,7 +139,7 @@ nextButton.addEventListener('click', () =>{
 })
 
 //Defines the question area that can holds the question text.
-let questionArea = document.getElementById('question-area');
+const questionArea = document.getElementById('question-area');
 
 //Sets both variables to be used by functions later
 let randomQuestion, currentQuestion;
@@ -198,20 +198,20 @@ function userAnswer(event){
         setCorrectIncorrect(button, button.dataset.correct); //Checks if button input is correct or incorrect and runs the function
     }) 
     if (randomQuestion.length > currentQuestion +1){
-        nextButton.classList.remove('hide');     
+        nextButton.classList.remove('hide');//If there are questions left to go, reveals the next button.     
     } else {
         quizEnd();
-        startButton.innerText = 'Restart';
+        startButton.innerText = 'Restart';//After last question is answered, turns next button into the restart button.
         startButton.classList.remove('hide')
     }
-    correct ? incrementScore(): incrementWrong();
+    correct ? incrementScore(): incrementWrong(); // Decides if the answer is correct or incorrect and tallies the appropriate score.
 }
 
-function incrementScore() {
+function incrementScore() { //Increments correct score tally.
     correctScore++;
 }
 
-function incrementWrong(){
+function incrementWrong() { //Increments incorrect score tally.
     incorrectScore++;
 }
 
@@ -238,15 +238,15 @@ let maxQuestions = 14
 //Function which progresses the quiz bar.
 function progressBar() {
     innerBar.style.width = `${(currentQuestion / maxQuestions) * 100}%`;
-    questionNo.innerHTML = `Q: ${currentQuestion +1}`;
+    questionNo.innerHTML = `Q: ${currentQuestion +1}`; 
 }
 
-function quizEnd() {
+function quizEnd() { // Displays score text at end of quiz.
     questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You answered ${correctScore} questions correctly.<br>You answered ${incorrectScore} questions incorrectly. <br> Press Restart to try again!`
     scoreReset();
 }
 
-function scoreReset() {
+function scoreReset() { //Resets score at end of quiz.
     incorrectScore = 0;
     correctScore = 0;
 }
