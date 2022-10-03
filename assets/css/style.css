@@ -492,15 +492,80 @@ header {
         height: 60px;
     }
 
-        /*Footer*/
-        #footer i {
-            font-size: 100%;
-            margin: 0 10px;
-        }    
+    /*Footer*/
+    #footer i {
+        font-size: 100%;
+        margin: 0 10px;
+    }    
 
     /*Error 404 page*/
     #error-area{
         width: 90%;
+    }
+
+    /*Quiz Page*/
+    #quiz-intro p{
+        font-size: small;
+    }
+
+    #question {
+        font-size: small;
+    }     
+
+    #control-area {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    #btn-start {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-quiz {
+        width: 150px;
+        font-size: small;
+    }
+
+    /*Progress Bar*/
+
+    #quiz-bar {
+        height: 10px;
+    }
+
+    /* Form page */
+    #form-area {
+        width: 80%;
+    }
+
+    #submit, #home {
+        width: 40%;
+    }
+
+    #email-form label {
+        font-size: medium;
+        width: 60%;
+    }
+
+    #email-form input {
+        width: 60%;
+    }
+
+    #email-form textarea {
+        width: 60%;
+        height: 60%;
+    }
+
+    .thank-you img {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+    }
+
+    .thank-you p {
+        font-size: medium;
     }
 
 }
