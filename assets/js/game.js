@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function(){
                     let userInput = this.getAttribute("data-type");
                     runGame(userInput);
             }
-        })
+        });
     }
-})
+});
 
 document.getElementById("rock").disabled = true; //Disables button before game.
 document.getElementById("paper").disabled = true; 
@@ -31,8 +31,8 @@ document.getElementById("scissors").disabled = true;
 document.getElementById("lizard").disabled = true;
 document.getElementById("spock").disabled = true;
 
-playerScore = 0 // Variable for player score to be incremented at game end.
-computerScore = 0 // Variable for computer score to be incremented at game end.
+let playerScore = 0; // Variable for player score to be incremented at game end.
+let computerScore = 0; // Variable for computer score to be incremented at game end.
 
 /**
  * Takes userInput from event activation and assigns a value to it.
@@ -63,56 +63,56 @@ function runGame (userInput){
  */
  function compare(userInput, compInput){
     if (userInput === compInput) {
-        outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>The result is a Tie!`
+        let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>The result is a Tie!`;
     } else if (userInput === 'rock') {
         if (compInput === 'paper'){
-            outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br> Paper covers Rock. You lose!`
+            let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br> Paper covers Rock. You lose!`;
         } else if (compInput === 'scissors'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You win!`;
         } else if (compInput === 'lizard'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Lizard. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Lizard. You win!`;
         } else {
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You lose!`;
         }
     } else if (userInput === 'paper') {
         if (compInput === 'scissors'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You lose!`;
         } else if (compInput === 'lizard'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You lose!`;
         } else if (compInput === 'spock'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You win!`;
         } else {
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper covers Rock. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper covers Rock. You win!`;
         }
     } else if (userInput === 'scissors') {
         if (compInput === 'rock'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`;
         } else if (compInput === 'paper'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You win!`;
         } else if (compInput === 'lizard'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors decapitates Lizard. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors decapitates Lizard. You win!`;
         } else {
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You lose!`;
         }
     } else if (userInput === 'lizard') {
         if (compInput === 'rock'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`;
         } else if (compInput === 'paper'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You win!`;
         } else if (compInput === 'spock'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard poisons Spock. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard poisons Spock. You win!`;
         } else {
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushed Lizard. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushed Lizard. You lose!`;
         }
     }  else if (userInput === 'spock') {
         if (compInput === 'rock'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You win!`;
         } else if (compInput === 'paper'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`;
         } else if (compInput === 'scissors'){
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You win!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You win!`;
         } else {
-             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`
+             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`;
         }
     }
     result (outcome);
@@ -133,17 +133,17 @@ function runGame (userInput){
  * Creates the game space by removing inner html of game-text area.
  */
 function gameSetup() {
-    document.getElementById("game-text").innerHTML = ""
+    document.getElementById("game-text").innerHTML = "";
 
-    let scoreArea = document.createElement('div')
-    let userScore = document.createElement('span')
-    let compScore = document.createElement('span')
+    let scoreArea = document.createElement('div');
+    let userScore = document.createElement('span');
+    let compScore = document.createElement('span');
     
-    scoreArea.setAttribute('id', 'score-area')
-    userScore.setAttribute('id','user-score')
-    compScore.setAttribute('id','comp-score')
+    scoreArea.setAttribute('id', 'score-area');
+    userScore.setAttribute('id','user-score');
+    compScore.setAttribute('id','comp-score');
 
-    document.getElementById("game-area").appendChild(scoreArea)
+    document.getElementById("game-area").appendChild(scoreArea);
     document.getElementById("score-area").appendChild(userScore);
     document.getElementById("score-area").appendChild(compScore);
 
@@ -160,7 +160,7 @@ function incrementScore() {
     } else if (outcome.includes(`lose`)){
         computerScore++;
     } else {
-        console.log('0')
+        console.log('0');
     }
     document.getElementById("user-score").innerHTML = `Your Score:<br>${playerScore}`;
     document.getElementById("comp-score").innerHTML = `Computer Score:<br>${computerScore}`;
