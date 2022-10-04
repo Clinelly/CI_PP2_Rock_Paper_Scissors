@@ -122,15 +122,36 @@ This website consists of 3 pages and xxxx features.
 
 ### HTML Validation
 
-The W3C Markup Validation Service was used to check the validity of the HTML used across the website.
-
+The W3C Markup Validation Service was used to check the validity of the HTML used across the website. 
+<details><summary>Home</summary>
+<img src="docs/validation/index_html_validation.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/validation/quiz_html_validation.png">
+</details>
+<details><summary>Form</summary>
+<img src="docs/validation/form_html_validation.png">
+</details>
+One warning was flagged on the form page (form.html). This is due to the link to the emailJS functionality script that was copied and pasted from the emailJS website.
 
 ### CSS Validation
 
 The W3C CSS Validation tool was used to check the validity of the CSS code used for the website. No errors or warnings were returned.
+<details><summary>Style</summary>
+<img src="docs/validation/css_validation.png">
+</details>
 
 ### JS Validation
 JSHint was used to check validity of the JavaScript code used for the website.
+<details><summary>Game</summary>
+<img src="docs/validation/game-js-validation.png">
+One warning was flagged with reference to functions taking values from higher scoped variables. This is because these variables are taken from user input in order to set the game up and run the game itself.
+</details><details><summary>Quiz</summary>
+<img src="docs/validation/quiz-js-validation.png">
+</details><details><summary>Form</summary>
+<img src="docs/validation/form-js-validation.png">
+</details>
+Two undeclared variables were flagged in the Form script (form.js). The code for the form was copied from the emailJS website.
 
 ### Accessibility
 
