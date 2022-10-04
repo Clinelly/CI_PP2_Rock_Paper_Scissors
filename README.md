@@ -1,5 +1,13 @@
 # Rock, Paper, Scissors, Lizard, Spock
 
+Rock, Paper, Scissors, Lizard, Spock is an entertainment website. The primary goal of this website to to host games for users; allowing them to have fun and spend time interacting with the website.
+
+(Developed by: Stuart Wall)
+
+![Responsive Images](docs/amiresponsive.png)
+
+[Live Website](https://clinelly.github.io/CI_PP2_Rock_Paper_Scissors/)
+
 ## Table of Content
 
 1. [Project Goals](#project-goals)
@@ -34,10 +42,11 @@
 11. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
-The overall project goal is to create a fun, entertaining website where people can play a game and pass the time.
+The overall project goal is to create a fun and interactive entertainment website where people can play games and pass the time.
 
 ### User Goals
-- To play a game.
+- To play games.
+- Enjoy media content.
 - To learn new rules.
 - To take a break/relax.
 
@@ -62,13 +71,16 @@ The overall project goal is to create a fun, entertaining website where people c
  - To easily understand website function and purpose.
  - To easily navigate the website to find content.
  - To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
+ - To take part in a quiz.
 
 #### Returning Users 
  - Continue to play the game.
+ - To have another attempt at the quiz.
  - Beat previous results.
 
 #### Frequent User
 - Check for any new features.
+- Provide feedback and suggestions to the website host.
 
 ## Design
 
