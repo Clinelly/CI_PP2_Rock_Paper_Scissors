@@ -95,8 +95,12 @@ The overall project goal is to create a fun and interactive entertainment websit
 
 ### Structure
 
+The website uses a generic layout. This prevents users from having a frustrating experience, caused by having a complex or unfamiliar layout. The header shows the page title. The main content is displayed in the main body in the centre of the screen with interactive buttons allowing the users to navigate the site. The footer is located at the bottom of the webpage and contains direct links to related external media.
 
-The website has one page: 
+The website has three pages:
+- The Home page, which houses the 'Rock, Paper, Scissors, Lizard, Spock' game.
+- The Quiz page, which is where the quiz element of the site is located.
+- The Form page, which allows the user to provide feedback and suggestions to the site creator.
 
 ### Wireframes
 
@@ -116,17 +120,56 @@ The website has one page:
 - GitPod
 - Balsamiq
 - Google Fonts
-- Adobe Colour
 - Font Awesome
 - Favicon.io
 - Google Chrome Developer Tools
+- emailJS
 
 ## Features
 
-This website consists of 3 pages and xxxx features.
+This website consists of 3 pages and 10 features.
 
 ### Existing Features
+
+**Header**
+Contains the title of the website for the user.
+![Header](docs/features/header.png)
+
+**Text Box**
+Contains the game introduction for the user to read. The content will change when the user clicks various buttons.
+![Text Box](docs/features/gametext-box.png)
+
+**Game Buttons**
+The buttons the user will use to input their choice for the 'Rock, Paper, Scissors, Lizard, Spock' game. They are disabled until the user starts the game.
+![Game Buttons](docs/features/rpsls-buttons.png)
  
+ **Control Buttons**
+ The buttons the user will use to navigate the game system. The 'Play' button starts the game. the 'Rules' display the rules. The 'Reset' button resets the page. The 'Quiz' button will take the user to the quiz page.
+ ![Control Buttons](docs/features/control-buttons.png)
+
+ **Footer**
+ The Footer contains links to external media sites. The 'Facebook' logo takes the user to a related Facebook page. The 'Youtube' icon take the user to a Youtube video of the rules. The 'Spotify' logo takes the user to a funny song on Spotify. The Envelope take the user to the feedback form page.
+ ![Footer](docs/features/rpsls-footer.png)
+
+ **Quiz Intro**
+ A small text box and start button to guide the user into starting the quiz.
+ ![Quiz Intro](docs/features/quiz-intro.png)
+
+ **Quiz Questions**
+ A text box which displays the questions and answer options to the user. A progress bar fills up with each question answered.
+ ![Quiz Questions](docs/features/quiz-questions.png)
+
+ **Feedback Form**
+ A form which allows the user to contact the site creator with ideas and feedback. The form is linked to an email address via emailJS; which generates an email response when the form is filled in.
+ ![Feedback Form](docs/features/feedback-form.png)
+
+ **Feedback Response**
+ A thank you message which pops up after the user has submitted the form.
+ ![Thank You](docs/features/feed-back-thankyou.png)
+
+ **404 Page**
+ An error page which displays if the user tries to naviate to an invalid page on the website. It contains an error image and message, as well as a button to return to the home page.
+ ![404](docs/features/404-pg.png)
 
 ### Features to be Implemented
 
