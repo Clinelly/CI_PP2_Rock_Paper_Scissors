@@ -127,7 +127,7 @@ const questions = [ //Question array
             {text: "Johnny Depp.", correct: true},
         ]
     },
-]
+];
 //Sets values to the next button
 let nextButton = document.getElementById('btn-next');
 
@@ -136,7 +136,7 @@ nextButton.addEventListener('click', () =>{
     currentQuestion++;
     nextQuestion();
     progressBar();
-})
+});
 
 //Defines the question area that can holds the question text.
 const questionArea = document.getElementById('question-area');
@@ -147,7 +147,6 @@ let randomQuestion, currentQuestion;
 //Sets definitions to elements used for the quiz
 const questionText = document.getElementById('question');
 const answerButtons = document.getElementById('button-area-quiz');
-const controlButtons = document.getElementById('control-area');
 let correctScore = 0;
 let incorrectScore = 0;
 
@@ -156,7 +155,7 @@ function runGame(){
     questionArea.classList.remove('hide'); //Reveals question area.
     outerBar.classList.remove('hide'); //Reveals progress bar
     innerBar.classList.remove('hide');
-    randomQuestion = questions.sort(() => Math.random() - .5); //Randomises questions
+    randomQuestion = questions.sort(() => Math.random() - 0.5); //Randomises questions
     currentQuestion = 0; //Starts from first question of array
     progressBar();
     nextQuestion();
@@ -181,7 +180,7 @@ function showQuestion(question){
         }
         button.addEventListener('click', userAnswer);//Adds event listener to run userAnswer function
         answerButtons.appendChild(button);//Adds buttons to the button area
-    })
+    });
 }
 
 function reset(){//Resets quiz elements when new question is selected
@@ -196,23 +195,29 @@ function userAnswer(event){
     let correct = buttonChoice.dataset.correct; //Takes assigned 'correct' dataset and adds it to the 'correct' variable
     Array.from(answerButtons.children).forEach(button => { //Creates an array from the answer button input to be looped through
         setCorrectIncorrect(button, button.dataset.correct); //Checks if button input is correct or incorrect and runs the function
-    }) 
+    }); 
     if (randomQuestion.length > currentQuestion +1){
         nextButton.classList.remove('hide');//If there are questions left to go, reveals the next button.     
     } else {
         quizEnd();
         startButton.innerText = 'Restart';//After last question is answered, turns next button into the restart button.
-        startButton.classList.remove('hide')
+        startButton.classList.remove('hide');
     }
-    correct ? incrementScore(): incrementWrong(); // Decides if the answer is correct or incorrect and tallies the appropriate score.
+      if (correct) {  // Decides if the answer is correct or incorrect and tallies the appropriate score.
+        incrementScore();
+       } else {
+        incrementWrong();
+    }
 }
 
 function incrementScore() { //Increments correct score tally.
     correctScore++;
+    console.log('right');
 }
 
 function incrementWrong() { //Increments incorrect score tally.
     incorrectScore++;
+    console.log('wrong');
 }
 
 function setCorrectIncorrect(element, correct) { //Adds a class to selected elements based on their data types when selected.
@@ -233,7 +238,7 @@ function clearCorrectIncorrect(element) { //Clears assigned class list each time
 let outerBar = document.getElementById('quiz-progress');
 let innerBar = document.getElementById('quiz-bar');
 let questionNo = document.getElementById('q-no');
-let maxQuestions = 14
+let maxQuestions = 14;
 
 //Function which progresses the quiz bar.
 function progressBar() {
@@ -242,7 +247,7 @@ function progressBar() {
 }
 
 function quizEnd() { // Displays score text at end of quiz.
-    questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You answered ${correctScore} questions correctly.<br>You answered ${incorrectScore} questions incorrectly. <br> Press Restart to try again!`
+    questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You answered ${correctScore} questions correctly.<br>You answered ${incorrectScore} questions incorrectly. <br> Press Restart to try again!`;
     scoreReset();
 }
 

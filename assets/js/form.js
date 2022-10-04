@@ -20,7 +20,7 @@
     emailjs.sendForm(serviceID, templateID, this)
      .then(() => {
        btn.value = 'Send';
-       document.getElementById('email-form').reset()
+       document.getElementById('email-form').reset();
        
       thankYou();
        

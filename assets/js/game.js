@@ -62,6 +62,7 @@ function runGame (userInput){
  * Decides who has won the round.
  */
  function compare(userInput, compInput){
+    let outcome = "";
     if (userInput === compInput) {
          outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>The result is a Tie!`;
     } else if (userInput === 'rock') {
@@ -125,7 +126,7 @@ function runGame (userInput){
     let gameEnd = document.getElementById("game-text");
     gameEnd.innerHTML = outcome.toUpperCase();
 
-    incrementScore();
+    incrementScore(outcome);
 }
 
 
@@ -153,7 +154,7 @@ function gameSetup() {
  * Score function. Increments the score of the computer or user.
  */
 
-function incrementScore() {
+function incrementScore(outcome) {
 
     if (outcome.includes(`win`)){
         playerScore++;
