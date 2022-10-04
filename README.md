@@ -22,11 +22,12 @@
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
+    3. [JS Validation](#JS-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Device testing](#performing-tests-on-various-devices)
+    7. [Browser compatibility](#browser-compatability)
+    8. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -110,7 +111,7 @@ The website has one page:
 
 ## Features
 
-This website consists of 1 page and xxxx features.
+This website consists of 3 pages and xxxx features.
 
 ### Existing Features
  
@@ -128,6 +129,8 @@ The W3C Markup Validation Service was used to check the validity of the HTML use
 
 The W3C CSS Validation tool was used to check the validity of the CSS code used for the website. No errors or warnings were returned.
 
+### JS Validation
+JSHint was used to check validity of the JavaScript code used for the website.
 
 ### Accessibility
 
