@@ -63,56 +63,56 @@ function runGame (userInput){
  */
  function compare(userInput, compInput){
     if (userInput === compInput) {
-        let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>The result is a Tie!`;
+         outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>The result is a Tie!`;
     } else if (userInput === 'rock') {
         if (compInput === 'paper'){
-            let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br> Paper covers Rock. You lose!`;
+             outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br> Paper covers Rock. You lose!`;
         } else if (compInput === 'scissors'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You win!`;
         } else if (compInput === 'lizard'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Lizard. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Lizard. You win!`;
         } else {
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You lose!`;
         }
     } else if (userInput === 'paper') {
         if (compInput === 'scissors'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You lose!`;
         } else if (compInput === 'lizard'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You lose!`;
         } else if (compInput === 'spock'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You win!`;
         } else {
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper covers Rock. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper covers Rock. You win!`;
         }
     } else if (userInput === 'scissors') {
         if (compInput === 'rock'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`;
         } else if (compInput === 'paper'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors cuts Paper. You win!`;
         } else if (compInput === 'lizard'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors decapitates Lizard. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Scissors decapitates Lizard. You win!`;
         } else {
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You lose!`;
         }
     } else if (userInput === 'lizard') {
         if (compInput === 'rock'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushes Scissors. You lose!`;
         } else if (compInput === 'paper'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard eats Paper. You win!`;
         } else if (compInput === 'spock'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard poisons Spock. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Lizard poisons Spock. You win!`;
         } else {
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushed Lizard. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Rock crushed Lizard. You lose!`;
         }
     }  else if (userInput === 'spock') {
         if (compInput === 'rock'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock vaporises Rock. You win!`;
         } else if (compInput === 'paper'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`;
         } else if (compInput === 'scissors'){
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You win!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Spock smashes Scissors. You win!`;
         } else {
-             let outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`;
+              outcome = `You chose: ${userInput}<br>The Computer chose: ${compInput}<br>Paper disproves Spock. You lose!`;
         }
     }
     result (outcome);
