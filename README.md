@@ -201,7 +201,7 @@ The W3C CSS Validation tool was used to check the validity of the CSS code used 
 JSHint was used to check validity of the JavaScript code used for the website.
 <details><summary>Game</summary>
 <img src="docs/validation/game-js-validation.png">
-One warning was flagged with reference to functions taking values from higher scoped variables. This is because these variables are taken from user input in order to set the game up and run the game itself.
+One warning was flagged with reference to functions taking values from higher scoped variables. This is because these variables are taken from user input in event listeners in order to set the game up and run the game itself.
 </details><details><summary>Quiz</summary>
 <img src="docs/validation/quiz-js-validation.png">
 </details><details><summary>Form</summary>
@@ -242,9 +242,17 @@ The website was tested on the following broswers:
 
 ## Bugs
 
+### Bugs Fixed
+
 | **Bug** | **Fix**|
 |-------------|------------|
+|The scores for the Rock, Paper, Scissors game was resetting instead of incrementing. | Removed score variables from the function scope and declared it in the global scope.|
+|The Rock, Paper, Scissors game can still be played after the winner has been declared. | Added a disable feature to the end game function to stop the user buttons from working.|
+|The Home button on the feedback form does not work, citing required fields are not completed.| Removed home button from the main form and nested in a seperate form.|
+|The style for the quiz buttons and container div did not align as expected. | Changed the div ID for the container div as it had the same ID as a container div for the Rock, Paper, Scissors game.|
+|EmailJS Script was not generating a response email. | Reset EmailJS account and input new service_id and email template.|
 
+### Bugs to be Fixed
 
 ## Deployment
 
@@ -253,7 +261,7 @@ The following steps were used to deploy the website using GitHub Pages:
 - In the GitHub repository, navigate to the 'Settings' tab.
 - On the left hand menu select 'Pages'.
 - For the source, select 'Branch: Master'.
-- The webpage will refresh automatically. A banner will display: "Your site is published at: https://clinelly.github.io/CI_PP1_IDG/".
+- The webpage will refresh automatically. A banner will display: "Your site is published at: https://clinelly.github.io/CI_PP2_Rock_Paper_Scissors/".
 - After a few minutes, the live website will build and deploy.
 
 In order to fork the repository, you must:
@@ -273,8 +281,8 @@ You can clone the repository by:
 - Typing 'git clone' and pasting the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 - Pressing 'Enter' to create your local clone.
 
-The live link can be found here - 
-The repository can be found here - 
+The live link can be found here - https://clinelly.github.io/CI_PP2_Rock_Paper_Scissors/
+The repository can be found here - https://github.com/Clinelly/CI_PP2_Rock_Paper_Scissors
 
 
 ## Credits
