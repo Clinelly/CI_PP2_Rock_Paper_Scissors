@@ -89,10 +89,10 @@ The overall project goal is to create a fun and interactive entertainment websit
 I wanted the website to have a fun, science fiction theme; leaning on inspiration from the comedy show 'The Big Bang Theory' which popularised the game 'Rock, Paper, Scissors, Lizard, Spock' and the series 'Star Trek'; which introduced the world to the character of Spock.
 
 ### Colour
-The colour scheme of the website ties into the sci-fi asthetic. The main background features an exotic alien planet and space-scape. The buttons are a luminous green  
+The colour scheme of the website ties into the sci-fi asthetic. The main background features an exotic alien planet and space-scape. The buttons are a luminous, alien green with a white border to draw attention to them. The content boxes are stylised like a retro sci-fi computer monitor; white text over a black box. The black is opaque to allow the user to see through to the background like a hologram. The title and media links have white text and a blue shadow, as a throwback to retro science-fictions tv shows.
 
 ### Fonts
-
+The Audiowide font was used as the only font for the site. It is a soft font which is easy on the eyes and fits with the technological asthetic of the website. Sans Serif was used as the back-up font.
 
 ### Structure
 
