@@ -53,6 +53,7 @@ The overall project goal is to create a fun and interactive entertainment websit
 ### Site Owner Goals
 - Host a fun website.
 - Enable users to play a game.
+- Allow users to take a quiz.
 - Pass on game knowledge.
 
 
@@ -85,10 +86,10 @@ The overall project goal is to create a fun and interactive entertainment websit
 ## Design
 
 ### Design Choices
-
+I wanted the website to have a fun, science fiction theme; leaning on inspiration from the comedy show 'The Big Bang Theory' which popularised the game 'Rock, Paper, Scissors, Lizard, Spock' and the series 'Star Trek'; which introduced the world to the character of Spock.
 
 ### Colour
-
+The colour scheme of the website ties into the sci-fi asthetic. The main background features an exotic alien planet and space-scape. The buttons are a luminous green  
 
 ### Fonts
 
