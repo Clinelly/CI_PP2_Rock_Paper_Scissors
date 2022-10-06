@@ -104,6 +104,15 @@ The website has three pages:
 - The Form page, which allows the user to provide feedback and suggestions to the site creator.
 
 ### Wireframes
+<details><summary>Home</summary>
+<img src="docs/wireframes/home_WF.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/wireframes/quiz_WF.png">
+</details>
+<details><summary>Form</summary>
+<img src="docs/wireframes/form_WF.png">
+</details>
 
 
 ## Technologies Used
