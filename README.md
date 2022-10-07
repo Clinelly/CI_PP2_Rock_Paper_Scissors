@@ -412,9 +412,11 @@ The website was tested on the following broswers:
 
 ### Bugs to be Fixed
 
-| **Bug** | **Attempted Fixes**|
-|-------------|------------|
-|Quiz score sometimes only records up to 14 questions instead of 15.<br> | Added 'console.log()' to 'if (correct)' statement to 'userAnswer()' function to test inputs, in case there was a bad input. User inputs were being logged correctly. <br> 
+
+| **Bug** | **Attempted Fixes**| **Result** | 
+|-------------|------------|------------|
+| Quiz score sometimes only records up to 14 questions instead of 15. | Added 'console.log()' to 'if (correct)' statement to 'userAnswer()' function to test inputs, in case there was a bad input. | User inputs were being logged correctly. |
+| (Continued) | Moved 'incrementScore()' and 'incrementWrong()' functions into the 'setCorrectIncorrect' functions to work when a datatype was assigned to the answers. | Scores were being incremented for each answer, resulting in scores of 45. |
 ## Deployment
 
 The following steps were used to deploy the website using GitHub Pages:
