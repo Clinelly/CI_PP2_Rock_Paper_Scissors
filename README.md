@@ -409,6 +409,8 @@ The website was tested on the following broswers:
 |The Home button on the feedback form does not work, citing required fields are not completed.| Removed home button from the main form and nested in a seperate form.|
 |The style for the quiz buttons and container div did not align as expected. | Changed the div ID for the container div as it had the same ID as a container div for the Rock, Paper, Scissors game.|
 |EmailJS Script was not generating a response email. | Reset EmailJS account and input new service_id and email template.|
+|Home buttons did not work when clicked.| Changed button to a submit input, nested in a form with a formaction to the homepage.|
+
 
 ### Bugs to be Fixed
 
@@ -417,6 +419,8 @@ The website was tested on the following broswers:
 |-------------|------------|------------|
 | Quiz score sometimes only records up to 14 questions instead of 15. | Added 'console.log()' to 'if (correct)' statement to 'userAnswer()' function to test inputs, in case there was a bad input. | User inputs were being logged correctly. |
 | (Continued) | Moved 'incrementScore()' and 'incrementWrong()' functions into the 'setCorrectIncorrect' functions to work when a datatype was assigned to the answers. | Scores were being incremented for each answer, resulting in scores of 45. |
+| (Continued) | Changed increment functions to look for button classes (element.classlist.contains) after data-types assigned by user choice. | Scores did not increment at all. |
+
 ## Deployment
 
 The following steps were used to deploy the website using GitHub Pages:
