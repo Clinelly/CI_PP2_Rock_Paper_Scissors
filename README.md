@@ -222,10 +222,12 @@ The W3C CSS Validation tool was used to check the validity of the CSS code used 
 JSHint was used to check validity of the JavaScript code used for the website.
 <details><summary>Game</summary>
 <img src="docs/validation/game-js-validation.png">
+</details>
 One warning was flagged with reference to functions taking values from higher scoped variables. This is because these variables are taken from user input tied to event listeners in order to set the game up and run the game itself.
-</details><details><summary>Quiz</summary>
+<details><summary>Quiz</summary>
 <img src="docs/validation/quiz-js-validation.png">
-</details><details><summary>Form</summary>
+</details>
+<details><summary>Form</summary>
 <img src="docs/validation/form-js-validation.png">
 </details>
 Two warnings were flagged. Two undeclared variables are in the Form script (form.js). The code for the form was copied from the emailJS website.
@@ -238,12 +240,11 @@ The WAVE WebAIM accessibility tool was used to evaluate the website's accessibil
 </details>
 One warning was flagged, due to a link in the footer to YouTube.
 
-</details><details><summary>Quiz</summary>
+<details><summary>Quiz</summary>
 <img src="docs/validation/webaim_quiz.png">
 </details>
 One warning was flagged, due to a link in the footer to YouTube.
-
-</details><details><summary>Form</summary>
+<details><summary>Form</summary>
 <img src="docs/validation/webaim_form.png">
 </details>
 Two warnings were flagged. One due to a link in the footer to YouTube; one due to the underline font-decoration in the form.
@@ -251,7 +252,16 @@ Two warnings were flagged. One due to a link in the footer to YouTube; one due t
 ### Performance
 
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
-
+All pages returned with scores above 90 in all categories.
+<details><summary>Home</summary>
+<img src="docs/validation/lighthouse_home.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/validation/lighthouse_quiz.png">
+</details>
+<details><summary>Form</summary>
+<img src="docs/validation/lighthouse_form.png">
+</details>
 
 ### Device testing
 
