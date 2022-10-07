@@ -259,6 +259,11 @@ The website was tested on the following broswers:
  1. To easily understand website function and purpose.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Header. | Navigate to any page and look at the top of the page. | Header displayed at top of each page. | Working as intended. |
+|Text Box.| Navigate to the home page and scroll down to read the main text box. | Text box displays information about the site. | Working as intended. |
+
+
+
 
  2. To easily navigate the website to find content.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
