@@ -95,19 +95,11 @@ header {
 
 .btn--pri {
     border-radius: 50%;
+    font-size: x-large;
     width: 120px;
     height: 120px;
     background-color: greenyellow;
     margin: 15px 10px;
-}
-
-.btn--pri::after {
-    content: attr(id);
-    color: inherit;
-    font-size: medium;
-    position: relative;
-    display: block;
-    text-transform: uppercase;
 }
 
 /*Style for game options*/
@@ -400,6 +392,7 @@ header {
     }
 
     .btn--pri {
+        font-size: small;
         width: 70px;
         height: 70px;
         margin: 5px 10px;
@@ -432,7 +425,7 @@ header {
         width: 90%;
     }
 
-        /*Quiz Page*/
+    /*Quiz Page*/
     #quiz-intro p{
         font-size: small;
     }
@@ -536,6 +529,7 @@ header {
     }
 
     .btn--pri {
+        font-size: small;
         width: 70px;
         height: 70px;
         margin: 5px 10px;
