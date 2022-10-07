@@ -69,19 +69,19 @@ The overall project goal is to create a fun and interactive entertainment websit
 ### User Stories
 
 #### First Time Users 
- - To easily understand website function and purpose.
- - To easily navigate the website to find content.
- - To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
- - To take part in a quiz.
+ 1. To easily understand website function and purpose.
+ 2. To easily navigate the website to find content.
+ 3. To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
+ 4. To take part in a quiz.
 
 #### Returning Users 
- - Continue to play the game.
- - To have another attempt at the quiz.
- - Beat previous results.
+ 5. Continue to play the game.
+ 6. To have another attempt at the quiz.
+ 7. Beat previous results.
 
 #### Frequent User
-- Check for any new features.
-- Provide feedback and suggestions to the website host.
+8. Check for any new features.
+9. Provide feedback and suggestions to the website host.
 
 ## Design
 
@@ -144,44 +144,56 @@ This website consists of 3 pages and 10 features.
 **Header**
 Contains the title of the website for the user.
 ![Header](docs/features/header.png)
+User stories covered: 1
 
 **Text Box**
 Contains the game introduction for the user to read. The content will change when the user clicks various buttons.
 ![Text Box](docs/features/gametext-box.png)
+User stories covered: 1, 2, 8
 
 **Game Buttons**
 The buttons the user will use to input their choice for the 'Rock, Paper, Scissors, Lizard, Spock' game. They are disabled until the user starts the game.
 ![Game Buttons](docs/features/rpsls-buttons.png)
+User stories covered: 3, 5, 7
  
  **Control Buttons**
  The buttons the user will use to navigate the game system. The 'Play' button starts the game. the 'Rules' display the rules. The 'Reset' button resets the page. The 'Quiz' button will take the user to the quiz page.
  ![Control Buttons](docs/features/control-buttons.png)
+ User stories covered: 2, 3, 4, 8
 
  **Footer**
  The Footer contains links to external media sites. The 'Facebook' logo takes the user to a related Facebook page. The 'Youtube' icon take the user to a Youtube video of the rules. The 'Spotify' logo takes the user to a funny song on Spotify. The Envelope take the user to the feedback form page.
  ![Footer](docs/features/rpsls-footer.png)
+ User stories covered: 2
 
  **Quiz Intro**
  A small text box and start button to guide the user into starting the quiz.
  ![Quiz Intro](docs/features/quiz-intro.png)
+ User stories covered: 4, 6
 
  **Quiz Questions**
- A text box which displays the questions and answer options to the user. A progress bar fills up with each question answered.
+ A text box which displays the questions and answer options to the user. A progress bar fills up with each question answered. At the end of the game, the user's correct and incorrect score are shown.
  ![Quiz Questions](docs/features/quiz-questions.png)
+ User stories covered: 4, 5, 6, 7
 
  **Feedback Form**
  A form which allows the user to contact the site creator with ideas and feedback. The form is linked to an email address via emailJS; which generates an email response when the form is filled in.
  ![Feedback Form](docs/features/feedback-form.png)
+ User stories covered: 9
 
  **Feedback Response**
  A thank you message which pops up after the user has submitted the form.
  ![Thank You](docs/features/feed-back-thankyou.png)
+ User stories covered: 9
 
  **404 Page**
  An error page which displays if the user tries to naviate to an invalid page on the website. It contains an error image and message, as well as a button to return to the home page.
  ![404](docs/features/404-pg.png)
+ User stories covered: 2
 
 ### Features to be Implemented
+- Score recording and storage.
+- Hi-Score Leaderboard.
 
 ## Testing
 
@@ -210,13 +222,13 @@ The W3C CSS Validation tool was used to check the validity of the CSS code used 
 JSHint was used to check validity of the JavaScript code used for the website.
 <details><summary>Game</summary>
 <img src="docs/validation/game-js-validation.png">
-One warning was flagged with reference to functions taking values from higher scoped variables. This is because these variables are taken from user input in event listeners in order to set the game up and run the game itself.
+One warning was flagged with reference to functions taking values from higher scoped variables. This is because these variables are taken from user input tied to event listeners in order to set the game up and run the game itself.
 </details><details><summary>Quiz</summary>
 <img src="docs/validation/quiz-js-validation.png">
 </details><details><summary>Form</summary>
 <img src="docs/validation/form-js-validation.png">
 </details>
-Two undeclared variables were flagged in the Form script (form.js). The code for the form was copied from the emailJS website.
+Two warnings were flagged. Two undeclared variables are in the Form script (form.js). The code for the form was copied from the emailJS website.
 
 ### Accessibility
 
@@ -244,10 +256,41 @@ The website was tested on the following broswers:
 
 ### Testing user stories
 
-
+ 1. To easily understand website function and purpose.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
+ 2. To easily navigate the website to find content.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+3. To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+4. To take part in a quiz.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+5. Continue to play the game.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+6. To have another attempt at the quiz.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+7. Beat previous results.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+8. Check for any new features.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+9. Provide feedback and suggestions to the website host.
+ | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 
 ## Bugs
 
@@ -263,6 +306,9 @@ The website was tested on the following broswers:
 
 ### Bugs to be Fixed
 
+| **Bug** | **Attempted Fixes**|
+|-------------|------------|
+|Quiz score sometimes only records up to 14 questions instead of 15.<br> | Added 'console.log()' to 'if (correct)' statement to 'userAnswer()' function to test inputs, in case there was a bad input. User inputs were being logged correctly. <br> 
 ## Deployment
 
 The following steps were used to deploy the website using GitHub Pages:
