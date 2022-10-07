@@ -159,7 +159,7 @@ User stories covered: 3, 5, 7
  **Control Buttons**
  The buttons the user will use to navigate the game system. The 'Play' button starts the game. the 'Rules' display the rules. The 'Reset' button resets the page. The 'Quiz' button will take the user to the quiz page.
  ![Control Buttons](docs/features/control-buttons.png)
- User stories covered: 2, 3, 4, 5, 8
+ User stories covered: 2, 3, 4, 5, 7, 8
 
  **Footer**
  The Footer contains links to external media sites. The 'Facebook' logo takes the user to a related Facebook page. The 'Youtube' icon take the user to a Youtube video of the rules. The 'Spotify' logo takes the user to a funny song on Spotify. The Envelope take the user to the feedback form page.
@@ -327,14 +327,34 @@ The website was tested on the following broswers:
 7. Beat previous results.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Game Buttons. | Once the game has started, user clicks their choice button to play the game. | The game plays after each choice and stops at 10 points. Both user and computer scores are shown. | Working as intended. |
+| Control Buttons. | Click the reset button to reset the page. | Once a player has reached 10 points, the game is over, the reset button will reset the page and allow the user to start a new game to see if they can improve their score. | Working as intended. |
+| Quiz Questions. |  After the last question has been answered, the user is prompted to start the quiz again. | Restart quiz button appears after the last question and starts the quiz again. The user's correct and incorrect scores are shown, allowing the user to improve their score on the next attempt. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 8. Check for any new features.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Text Box. | Navigate to the main page and view the text box. | Any new features will be highlighted in the main content box. | Working as intended. |
+| Control Buttons. | Navigate to main page and view the control buttons. Links to new features and pages will be displayed as buttons. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 9. Provide feedback and suggestions to the website host.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Footer. | Navigate to the button of each page. Click the 'email' icon. | Takes the user to the feedback page. | Working as intended. |
+| Feedback Form. | Navigate to the form page and fill in the form. Submit the form by clicking the 'send' button. | Working as intended. |
+| Feedback Response. | Submit the form by filling in the required fields and clicking the send button. | After submission, the user is taken to a response page where they can then return to the home page. | Working as expected. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 ## Bugs
 
