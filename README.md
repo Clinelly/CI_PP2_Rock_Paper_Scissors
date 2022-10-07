@@ -159,12 +159,12 @@ User stories covered: 3, 5, 7
  **Control Buttons**
  The buttons the user will use to navigate the game system. The 'Play' button starts the game. the 'Rules' display the rules. The 'Reset' button resets the page. The 'Quiz' button will take the user to the quiz page.
  ![Control Buttons](docs/features/control-buttons.png)
- User stories covered: 2, 3, 4, 8
+ User stories covered: 2, 3, 4, 5, 8
 
  **Footer**
  The Footer contains links to external media sites. The 'Facebook' logo takes the user to a related Facebook page. The 'Youtube' icon take the user to a Youtube video of the rules. The 'Spotify' logo takes the user to a funny song on Spotify. The Envelope take the user to the feedback form page.
  ![Footer](docs/features/rpsls-footer.png)
- User stories covered: 2
+ User stories covered: 2, 9
 
  **Quiz Intro**
  A small text box and start button to guide the user into starting the quiz.
@@ -174,7 +174,7 @@ User stories covered: 3, 5, 7
  **Quiz Questions**
  A text box which displays the questions and answer options to the user. A progress bar fills up with each question answered. At the end of the game, the user's correct and incorrect score are shown.
  ![Quiz Questions](docs/features/quiz-questions.png)
- User stories covered: 4, 5, 6, 7
+ User stories covered: 4, 6, 7
 
  **Feedback Form**
  A form which allows the user to contact the site creator with ideas and feedback. The form is linked to an email address via emailJS; which generates an email response when the form is filled in.
@@ -257,33 +257,72 @@ The website was tested on the following broswers:
 ### Testing user stories
 
  1. To easily understand website function and purpose.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Header. | Navigate to any page and look at the top of the page. | Header displayed at top of each page. | Working as intended. |
-|Text Box.| Navigate to the home page and scroll down to read the main text box. | Text box displays information about the site. | Working as intended. |
+| Header. | Navigate to any page and look at the top of the page. | Header displayed at top of each page. | Working as intended. |
+| Text Box. | Navigate to the home page and scroll down to read the main text box. | Text box displays information about the site. | Working as intended. |
 
+<details><summary>Screenshots</summary>
+<img src="docs/user_stories/user_story_1_main.png">
+<img src="docs/user_stories/user_story_1_about_us.png">
+</details>
 
 
 
  2. To easily navigate the website to find content.
+
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Text Box. | Navigate to main page and read the text box for information. | Text box displays information about the site that changes when certain buttons are clicked. | Working as intended. |
+| Control Buttons. | Navigate to main page and interact with the control buttons to interact with the game and navigate through the site. | Control buttons change the text box content for the user to read and take the user to different pages on the site. | Working as intended. |
+| Footer. | Navigate to the bottom of every page to view links to external media. | Each link will take the user to an external media site. | Working as indended. | 
+| 404 page. | If the user tries to access an invalid page, an error page will pop up with an escape link. | A 404 page will show and guide the user back to the main page. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 3. To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Game buttons. | Navigate to main page, click a button to make your choice. | When the user makes a game choice, the computer makes a choice and the game is played. | Working as intended. |
+| Control buttons. |Navigate to the main page and click the rules button and the play button. | When clicked, the play button builds the game area and activates the game buttons. Clicking the rules button shows the rules. | Working as intended.|
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 4. To take part in a quiz.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Control Buttons. | Navigate to main page and click the quiz button. | Takes the user to the quiz page. | Working as intended. |
+| Quiz Intro. | Appears after user has clicked the 'quiz' button on main page. Click 'Start Quiz' to start the quiz. | Prompts user to start the quiz and builds the quiz page. | Working as intended. |
+| Quiz Questions. | Appears after the 'Start Quiz' button has been pressed. | Gives the user a question with multiple answers. When an answer is selected, shows the user if they are right or wrong and prompts user to move to the next question. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 5. Continue to play the game.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Game Buttons. | Once the game has started, user clicks their choice button to play the game. | The game plays after each choice and stops at 10 points. | Working as intended. |
+| Control Buttons. | Click the reset button to play the game again after the max points have been reached. | Resets the page for the user to try again. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 6. To have another attempt at the quiz.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Quiz Intro. | Appears after user has clicked the 'quiz' button on main page. Click 'Start Quiz' to start the quiz. | Prompts user to start the quiz and builds the quiz page. | Working as intended. |
+| Quiz Questions. | After the last question has been answered, the user is prompted to start the quiz again. | Restart quiz button appears after the last question and starts the quiz again. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+
+</details>
 
 7. Beat previous results.
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
