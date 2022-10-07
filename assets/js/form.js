@@ -33,7 +33,7 @@
  function thankYou() {
     let message = `
       <div class = 'thank-you'>
-        <img src="/assets/images/spock_thanks.webp" alt = "Spock giving the Vulcan salute">
+        <img src="/workspace/CI_PP2_Rock_Paper_Scissors/assets/images/spock_thanks.webp" alt = "Spock giving the Vulcan salute">
         <p>Thank you for your feedback!<br>May you live long and prosper!</p>
       </div>
       <form id ="form-home">
