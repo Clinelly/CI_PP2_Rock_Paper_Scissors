@@ -233,7 +233,20 @@ Two warnings were flagged. Two undeclared variables are in the Form script (form
 ### Accessibility
 
 The WAVE WebAIM accessibility tool was used to evaluate the website's accessibility.
+</details><details><summary>Home</summary>
+<img src="docs/validation/webaim_home.png">
+</details>
+One warning was flagged, due to a link in the footer to YouTube.
 
+</details><details><summary>Quiz</summary>
+<img src="docs/validation/webaim_quiz.png">
+</details>
+One warning was flagged, due to a link in the footer to YouTube.
+
+</details><details><summary>Form</summary>
+<img src="docs/validation/webaim_form.png">
+</details>
+Two warnings were flagged. One due to a link in the footer to YouTube; one due to the underline font-decoration in the form.
 
 ### Performance
 
