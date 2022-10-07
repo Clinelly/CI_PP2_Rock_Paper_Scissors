@@ -264,14 +264,14 @@ The website was tested on the following broswers:
 | Text Box. | Navigate to the home page and scroll down to read the main text box. | Text box displays information about the site. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user_stories/user_story_1_main.png">
-<img src="docs/user_stories/user_story_1_about_us.png">
+<img src="docs/testing/testing_us1_header.png">
+<img src="docs/testing/testing_us1_textbox.png">
 </details>
 
 
  2. To easily navigate the website to find content.
 
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Text Box. | Navigate to main page and read the text box for information. | Text box displays information about the site that changes when certain buttons are clicked. | Working as intended. |
 | Control Buttons. | Navigate to main page and interact with the control buttons to interact with the game and navigate through the site. | Control buttons change the text box content for the user to read and take the user to different pages on the site. | Working as intended. |
@@ -279,80 +279,100 @@ The website was tested on the following broswers:
 | 404 page. | If the user tries to access an invalid page, an error page will pop up with an escape link. | A 404 page will show and guide the user back to the main page. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us2_textbox.png">
+<img src="docs/testing/testing_us2_controls.png">
+<img src="docs/testing/testing_us2_footer.png">
+<img src="docs/testing/testing_us2_404.png">
 </details>
 
 3. To play a game of chance (Rock, Paper, Scissors, Lizard, Spock).
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Game buttons. | Navigate to main page, click a button to make your choice. | When the user makes a game choice, the computer makes a choice and the game is played. | Working as intended. |
-| Control buttons. |Navigate to the main page and click the rules button and the play button. | When clicked, the play button builds the game area and activates the game buttons. Clicking the rules button shows the rules. | Working as intended.|
+| Control buttons. | Navigate to the main page and click the rules button and the play button. | When clicked, the play button builds the game area and activates the game buttons. Clicking the rules button shows the rules. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us3_choicebuttons.png">
+<img src="docs/testing/testing_us3_playbutton.png">
 </details>
 
 4. To take part in a quiz.
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Control Buttons. | Navigate to main page and click the quiz button. | Takes the user to the quiz page. | Working as intended. |
 | Quiz Intro. | Appears after user has clicked the 'quiz' button on main page. Click 'Start Quiz' to start the quiz. | Prompts user to start the quiz and builds the quiz page. | Working as intended. |
 | Quiz Questions. | Appears after the 'Start Quiz' button has been pressed. | Gives the user a question with multiple answers. When an answer is selected, shows the user if they are right or wrong and prompts user to move to the next question. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us4_quizbutton.png">
+<img src="docs/testing/testing_us4_quizstart.png">
+<img src="docs/testing/testing_us4_quizanswer.png">
 </details>
 
 5. Continue to play the game.
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Game Buttons. | Once the game has started, user clicks their choice button to play the game. | The game plays after each choice and stops at 10 points. | Working as intended. |
 | Control Buttons. | Click the reset button to play the game again after the max points have been reached. | Resets the page for the user to try again. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us5_gamebuttons.png">
+<img src="docs/testing/testing_us5_reset.png">
 </details>
 
 6. To have another attempt at the quiz.
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Quiz Intro. | Appears after user has clicked the 'quiz' button on main page. Click 'Start Quiz' to start the quiz. | Prompts user to start the quiz and builds the quiz page. | Working as intended. |
 | Quiz Questions. | After the last question has been answered, the user is prompted to start the quiz again. | Restart quiz button appears after the last question and starts the quiz again. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us6_quizstart.png">
+<img src="docs/testing/testing_us6_quizrestart.png">
 </details>
 
 7. Beat previous results.
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Game Buttons. | Once the game has started, user clicks their choice button to play the game. | The game plays after each choice and stops at 10 points. Both user and computer scores are shown. | Working as intended. |
 | Control Buttons. | Click the reset button to reset the page. | Once a player has reached 10 points, the game is over, the reset button will reset the page and allow the user to start a new game to see if they can improve their score. | Working as intended. |
 | Quiz Questions. |  After the last question has been answered, the user is prompted to start the quiz again. | Restart quiz button appears after the last question and starts the quiz again. The user's correct and incorrect scores are shown, allowing the user to improve their score on the next attempt. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us7_gamebuttons.png">
+<img src="docs/testing/testing_us7_reset.png">
+<img src="docs/testing/testing_us7_quizend.png">
 </details>
 
 8. Check for any new features.
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Text Box. | Navigate to the main page and view the text box. | Any new features will be highlighted in the main content box. | Working as intended. |
 | Control Buttons. | Navigate to main page and view the control buttons. Links to new features and pages will be displayed as buttons. | Working as intended. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us8_textbox.png">
+<img src="docs/testing/testing_us8_buttons.png">
 </details>
 
 9. Provide feedback and suggestions to the website host.
- | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Footer. | Navigate to the button of each page. Click the 'email' icon. | Takes the user to the feedback page. | Working as intended. |
 | Feedback Form. | Navigate to the form page and fill in the form. Submit the form by clicking the 'send' button. | Working as intended. |
 | Feedback Response. | Submit the form by filling in the required fields and clicking the send button. | After submission, the user is taken to a response page where they can then return to the home page. | Working as expected. |
 
 <details><summary>Screenshots</summary>
-
+<img src="docs/testing/testing_us9_footer.png">
+<img src="docs/testing/testing_us9_form.png">
+<img src="docs/testing/testing_us9_formthanks.png">
 </details>
 
 ## Bugs
