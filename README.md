@@ -269,7 +269,6 @@ The website was tested on the following broswers:
 </details>
 
 
-
  2. To easily navigate the website to find content.
 
  | **Feature** | **Action** | **Expected Result** | **Actual Result** |
