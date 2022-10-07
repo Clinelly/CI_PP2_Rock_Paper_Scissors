@@ -128,6 +128,7 @@ const questions = [ //Question array
         ]
     },
 ];
+
 //Sets values to the next button
 let nextButton = document.getElementById('btn-next');
 
@@ -159,7 +160,6 @@ function runGame(){
     currentQuestion = 0; //Starts from first question of array
     progressBar();
     nextQuestion();
-
 }
 
 function nextQuestion(){

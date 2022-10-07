@@ -31,15 +31,14 @@ document.getElementById("scissors").disabled = true;
 document.getElementById("lizard").disabled = true;
 document.getElementById("spock").disabled = true;
 
-let playerScore = 0; // Variable for player score to be incremented at game end.
-let computerScore = 0; // Variable for computer score to be incremented at game end.
+const playerScore = 0; // Variable for player score to be incremented at game end.
+const computerScore = 0; // Variable for computer score to be incremented at game end.
 
 /**
  * Takes userInput from event activation and assigns a value to it.
  * Computer answer is generated from a random number and an assigned value.
  */
 function runGame (userInput){
-
     let compInput = Math.floor(Math.random()*5)+1;
     switch(compInput){
         case 1: compInput = "rock";
@@ -53,7 +52,6 @@ function runGame (userInput){
         case 5 : compInput = "spock";
         break;
     }
- 
     compare(userInput, compInput);
 }
 
@@ -125,29 +123,23 @@ function runGame (userInput){
  function result(outcome){
     let gameEnd = document.getElementById("game-text");
     gameEnd.innerHTML = outcome.toUpperCase();
-
     incrementScore(outcome);
 }
-
 
 /**
  * Creates the game space by removing inner html of game-text area.
  */
 function gameSetup() {
     document.getElementById("game-text").innerHTML = "";
-
     let scoreArea = document.createElement('div');
     let userScore = document.createElement('span');
-    let compScore = document.createElement('span');
-    
+    let compScore = document.createElement('span');   
     scoreArea.setAttribute('id', 'score-area');
     userScore.setAttribute('id','user-score');
     compScore.setAttribute('id','comp-score');
-
     document.getElementById("game-area").appendChild(scoreArea);
     document.getElementById("score-area").appendChild(userScore);
     document.getElementById("score-area").appendChild(compScore);
-
 }
 
 /**
@@ -155,7 +147,6 @@ function gameSetup() {
  */
 
 function incrementScore(outcome) {
-
     if (outcome.includes(`win`)){
         playerScore++;
     } else if (outcome.includes(`lose`)){
@@ -164,8 +155,7 @@ function incrementScore(outcome) {
         console.log('0');
     }
     document.getElementById("user-score").innerHTML = `Your Score:<br>${playerScore}`;
-    document.getElementById("comp-score").innerHTML = `Computer Score:<br>${computerScore}`;
-    
+    document.getElementById("comp-score").innerHTML = `Computer Score:<br>${computerScore}`;   
     checkScore();
 }
 
