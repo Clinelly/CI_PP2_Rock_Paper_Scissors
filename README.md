@@ -81,6 +81,7 @@ The overall project goal is to create a fun and interactive entertainment websit
 #### Frequent User
 8. Check for any new features.
 9. Provide feedback and suggestions to the website host.
+10. To be able to return to the homepage if taken to a 'broken' page of the site.
 
 ## Design
 
@@ -187,7 +188,7 @@ User stories covered: 3, 5, 7
  **404 Page**
  An error page which displays if the user tries to naviate to an invalid page on the website. It contains an error image and message, as well as a button to return to the home page.
  ![404](docs/features/404-pg.png)
- User stories covered: 2
+ User stories covered: 2, 10
 
 ### Features to be Implemented
 - Score recording and storage.
@@ -395,6 +396,16 @@ The website was tested on the following broswers:
 <img src="docs/testing/testing_us9_footer.png">
 <img src="docs/testing/testing_us9_form.png">
 <img src="docs/testing/testing_us9_formthanks.png">
+</details>
+
+ 10. To be able to return to the homepage if taken to a 'broken' page of the site.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 page. | Navigate to a 'broken' page, through accident or deliberate action. | Shows 404 error and a button to return to the homepage. | Working as intended. |
+
+<details><summary>Screenshots</summary>
+<img src="docs/testing/testing_us10_404.png">
 </details>
 
 ## Bugs
