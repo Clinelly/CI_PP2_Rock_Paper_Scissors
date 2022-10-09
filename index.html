@@ -1,58 +1,71 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A Sci-Fi based game of chance.">
-        <meta name="keywords" content="rock, paper, scissor, lizard, spock, star trek, big bang theory">
-        <!--Stylesheet link-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--Favicon links-->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-        <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
-        <title>Rock, Paper, Scissors, Lizard, Spock | Home</title>
-    </head>
-    <body>
-        <!--Header-->
-        <header id="header">
-            <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
-        </header>
-        <div id = "game-background">
-            <!--Game Text area-->
-            <div id = "game-area">
-                <p id = "game-text">Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or 'Rules' to read the rules!<br>If you fancy testing your knowledge instead, press the 'Quiz' button!</p>
-            </div>
-                    <!--Game Input buttons-->
-                    <div id="button-area">
-                        <button data-type="rock" class="btn btn--pri" id="rock"><i class="far fa-hand-rock"></i><br>Rock</button>
-                        <button data-type="paper" class="btn btn--pri" id="paper"><i class="far fa-hand-paper"></i><br>Paper</button>
-                        <button data-type="scissors" class="btn btn--pri" id="scissors"><i class="far fa-hand-scissors"></i><br>Scissors</button>
-                        <button data-type="lizard" class="btn btn--pri" id="lizard"><i class="far fa-hand-lizard"></i><br>Lizard</button>
-                        <button data-type="spock" class="btn btn--pri" id="spock"><i class="far fa-hand-spock"></i><br>Spock</button>
-                    </div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Sci-Fi based game of chance.">
+    <meta name="keywords" content="rock, paper, scissor, lizard, spock, star trek, big bang theory">
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Favicon links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <title>Rock, Paper, Scissors, Lizard, Spock | Home</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header">
+        <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
+    </header>
+    <div id="game-background">
+        <!--Game Text area-->
+        <div id="game-area">
+            <p id="game-text">Welcome to Rock, Paper, Scissor, Lizard, Spock!<br>Press 'Play' to start a game, or
+                'Rules' to read the rules!<br>If you fancy testing your knowledge instead, press the 'Quiz' button!</p>
         </div>
-            <div id = "rules-area">
-                <!--Game option buttons-->
-                <button data-type="play" class="btn btn--sec" id="play">Play</button>
-                <button data-type="rules" class="btn btn--sec" id="rules">Rules</button>
-                <button data-type="reset" class="btn btn--sec" id="reset">Reset</button>
-                <form>
-                    <button id ="quiz-btn" class="btn btn--sec" type="submit" formaction="quiz.html">Quiz</button>
-                </form>
-            </div>
-        <!--Footer-->
-        <footer id = "footer">
-            <a href="https://www.facebook.com/groups/52994828019" target="_blank" aria-label="check out the community on facebook (opens in a new tab)"><i class="fa fa-facebook-square"></i></a>
-            <a href="https://www.youtube.com/watch?v=x5Q6-wMx-K8" target="_blank" aria-label="see the rules on youtube (opens in a new tab)"><i class="fa fa-youtube-square"></i></a>
-            <a href="https://open.spotify.com/track/0CmIii6l64Dar5EcHVbw9v?si=a88e060bf90042b1" target="_blank" aria-label="star trekking on spotify (opens in a new tab - account required for full song)"><i class="fab fa-spotify"></i></a>
-            <a href="form.html" target="_blank" aria-label="contact us"><i class="fas fa-envelope-square"></i></a>
-        </footer>
-        <!--Fontawesome link-->
-        <script rel="preload" src="https://kit.fontawesome.com/749d4dd5a6.js" crossorigin="anonymous"></script>
-        <!--JavaScript Link-->
-        <script src="assets/js/game.js"></script>
-    </body>
-    </html>
+        <!--Game Input buttons-->
+        <div id="button-area">
+            <button data-type="rock" class="btn btn--pri" id="rock"><i class="far fa-hand-rock"></i><br>Rock</button>
+            <button data-type="paper" class="btn btn--pri" id="paper"><i
+                    class="far fa-hand-paper"></i><br>Paper</button>
+            <button data-type="scissors" class="btn btn--pri" id="scissors"><i
+                    class="far fa-hand-scissors"></i><br>Scissors</button>
+            <button data-type="lizard" class="btn btn--pri" id="lizard"><i
+                    class="far fa-hand-lizard"></i><br>Lizard</button>
+            <button data-type="spock" class="btn btn--pri" id="spock"><i
+                    class="far fa-hand-spock"></i><br>Spock</button>
+        </div>
+    </div>
+    <div id="rules-area">
+        <!--Game option buttons-->
+        <button data-type="play" class="btn btn--sec" id="play">Play</button>
+        <button data-type="rules" class="btn btn--sec" id="rules">Rules</button>
+        <button data-type="reset" class="btn btn--sec" id="reset">Reset</button>
+        <form>
+            <button id="quiz-btn" class="btn btn--sec" type="submit" formaction="quiz.html">Quiz</button>
+        </form>
+    </div>
+    <!--Footer-->
+    <footer id="footer">
+        <a href="https://www.facebook.com/groups/52994828019" target="_blank"
+            aria-label="check out the community on facebook (opens in a new tab)"><i
+                class="fa fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com/watch?v=x5Q6-wMx-K8" target="_blank"
+            aria-label="see the rules on youtube (opens in a new tab)"><i class="fa fa-youtube-square"></i></a>
+        <a href="https://open.spotify.com/track/0CmIii6l64Dar5EcHVbw9v?si=a88e060bf90042b1" target="_blank"
+            aria-label="star trekking on spotify (opens in a new tab - account required for full song)"><i
+                class="fab fa-spotify"></i></a>
+        <a href="form.html" target="_blank" aria-label="contact us"><i class="fas fa-envelope-square"></i></a>
+    </footer>
+    <!--Fontawesome link-->
+    <script rel="preload" src="https://kit.fontawesome.com/749d4dd5a6.js" crossorigin="anonymous"></script>
+    <!--JavaScript Link-->
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>

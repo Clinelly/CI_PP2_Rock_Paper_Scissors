@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A Sci-Fi based game of chance.">
-        <meta name="keywords" content="rock, paper, scissor, lizard, spock, star trek, big bang theory">
-        <!--Stylesheet link-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--Favicon links-->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-        <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
-        <title>Rock, Paper, Scissors, Lizard, Spock | Quiz</title>
-    </head>
-    <body>
-        <!--Header-->
-        <header id="header">
-            <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
-        </header>
-        <!--Quiz Area-->
-        <div id="quiz-intro">
-            <p>So you've crushed a pair of scissors, covered some rocks and decapitated a lizard...<br>...but can you disprove Spock?<br>Take our trivia quiz and find out!</p>
-        </div>
-        <div id ="quiz-background">  
-            <div id = "question-area" class="hide">
-                <div id = "quiz-progress" class="hide">
-                    <p id="q-no"></p>
-                    <div id = "quiz-bar" class="hide"></div>
-                </div>     
-                <div id = "question">           
-                </div> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Sci-Fi based game of chance.">
+    <meta name="keywords" content="rock, paper, scissor, lizard, spock, star trek, big bang theory">
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Favicon links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <title>Rock, Paper, Scissors, Lizard, Spock | Quiz</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header">
+        <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
+    </header>
+    <!--Quiz Area-->
+    <div id="quiz-intro">
+        <p>So you've crushed a pair of scissors, covered some rocks and decapitated a lizard...<br>...but can you
+            disprove Spock?<br>Take our trivia quiz and find out!</p>
+    </div>
+    <div id="quiz-background">
+        <div id="question-area" class="hide">
+            <div id="quiz-progress" class="hide">
+                <p id="q-no"></p>
+                <div id="quiz-bar" class="hide"></div>
             </div>
-            <div id = "button-area-quiz">
-                <button id="ans-btn-1" class="btn btn--sec btn-quiz hide">Answer 1</button>
-                <button id="ans-btn-2" class="btn btn--sec btn-quiz hide">Answer 2</button>
-                <button id="ans-btn-3" class="btn btn--sec btn-quiz hide" >Answer 3</button>
+            <div id="question">
             </div>
         </div>
-        <div id="control-area">
-            <button id="btn-start" class="btn btn--sec">Start<br>Quiz!</button>
-            <button id="btn-next" class="btn btn--sec hide">Next</button>
+        <div id="button-area-quiz">
+            <button id="ans-btn-1" class="btn btn--sec btn-quiz hide">Answer 1</button>
+            <button id="ans-btn-2" class="btn btn--sec btn-quiz hide">Answer 2</button>
+            <button id="ans-btn-3" class="btn btn--sec btn-quiz hide">Answer 3</button>
         </div>
-        <form id="rtn-home">
-            <button id ="home" class="btn btn--sec" type="submit" formaction="index.html">Home</button>
-        </form>
-        <!--Footer-->
-        <footer id = "footer">
-            <a href="https://www.facebook.com/groups/52994828019" target="_blank" aria-label="check out the community on facebook (opens in a new tab)"><i class="fa fa-facebook-square"></i></a>
-            <a href="https://www.youtube.com/watch?v=x5Q6-wMx-K8" target="_blank" aria-label="see the rules on youtube (opens in a new tab)"><i class="fa fa-youtube-square"></i></a>
-            <a href="https://open.spotify.com/track/0CmIii6l64Dar5EcHVbw9v?si=a88e060bf90042b1" target="_blank" aria-label="star trekking on spotify (opens in a new tab - account required for full song)"><i class="fab fa-spotify"></i></a>
-            <a href="form.html" target="_blank" aria-label="contact us"><i class="fas fa-envelope-square"></i></a>
-        </footer>
-        <!--Fontawesome link-->
-        <script rel="preload" src="https://kit.fontawesome.com/749d4dd5a6.js" crossorigin="anonymous"></script>
-        <!--JavaScript Link-->
-        <script src="assets/js/quiz.js"></script>
-    </body>
-    </html>
+    </div>
+    <div id="control-area">
+        <button id="btn-start" class="btn btn--sec">Start<br>Quiz!</button>
+        <button id="btn-next" class="btn btn--sec hide">Next</button>
+    </div>
+    <form id="rtn-home">
+        <button id="home" class="btn btn--sec" type="submit" formaction="index.html">Home</button>
+    </form>
+    <!--Footer-->
+    <footer id="footer">
+        <a href="https://www.facebook.com/groups/52994828019" target="_blank"
+            aria-label="check out the community on facebook (opens in a new tab)"><i
+                class="fa fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com/watch?v=x5Q6-wMx-K8" target="_blank"
+            aria-label="see the rules on youtube (opens in a new tab)"><i class="fa fa-youtube-square"></i></a>
+        <a href="https://open.spotify.com/track/0CmIii6l64Dar5EcHVbw9v?si=a88e060bf90042b1" target="_blank"
+            aria-label="star trekking on spotify (opens in a new tab - account required for full song)"><i
+                class="fab fa-spotify"></i></a>
+        <a href="form.html" target="_blank" aria-label="contact us"><i class="fas fa-envelope-square"></i></a>
+    </footer>
+    <!--Fontawesome link-->
+    <script rel="preload" src="https://kit.fontawesome.com/749d4dd5a6.js" crossorigin="anonymous"></script>
+    <!--JavaScript Link-->
+    <script src="assets/js/quiz.js"></script>
+</body>
+
+</html>
