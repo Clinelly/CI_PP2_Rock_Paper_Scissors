@@ -31,8 +31,8 @@ document.getElementById("scissors").disabled = true;
 document.getElementById("lizard").disabled = true;
 document.getElementById("spock").disabled = true;
 
-const playerScore = 0; // Variable for player score to be incremented at game end.
-const computerScore = 0; // Variable for computer score to be incremented at game end.
+let playerScore = 0; // Variable for player score to be incremented at game end.
+let computerScore = 0; // Variable for computer score to be incremented at game end.
 
 /**
  * Takes userInput from event activation and assigns a value to it.
