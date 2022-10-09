@@ -151,6 +151,10 @@ const answerButtons = document.getElementById('button-area-quiz');
 let correctScore = 0;
 let incorrectScore = 0;
 
+/**
+* Run game function - reveals the game area and elements.
+* Randomises question set and starts the iteration of the question array.
+*/
 function runGame(){
     startButton.classList.add('hide'); //Hides start button.
     questionArea.classList.remove('hide'); //Reveals question area.
@@ -162,11 +166,20 @@ function runGame(){
     nextQuestion();
 }
 
+/**
+* Moves through the question array.
+*/
 function nextQuestion(){
     reset();
     showQuestion(randomQuestion[currentQuestion]);//Shows the next question in the array
 }
 
+/**
+* Moves through the question array, displaying the text in the question area.
+* Creates button elements and populates them with answer text.
+* Assigns data-sets to the answers to differentiate between correct and incorrect answers.
+* @param {object} question
+*/
 function showQuestion(question){
     questionText.innerText = question.question;//Displays question text in container
     question.answers.forEach(answers => {
@@ -183,6 +196,9 @@ function showQuestion(question){
     });
 }
 
+/** 
+* Resets the quiz area when the next question is called.
+*/
 function reset(){//Resets quiz elements when new question is selected
     nextButton.classList.add('hide');
     while (answerButtons.firstChild){ //Loops through the button-area element 'looking' for the first child element
@@ -190,6 +206,14 @@ function reset(){//Resets quiz elements when new question is selected
     }
 }
 
+/**
+* Listens for the event 'click' on the answer button.
+* Runs through the possible answers in the array and checks if they are 'correct' or 'incorrect'.
+* Checks if there are questions left in the array and displays the next question button if there are.
+* If there are no questions left, ends the quiz, displays the end-of-quiz text and the reset button.
+* Increments the scores depending on if the user is right or wrong.
+* @param {event} event
+*/
 function userAnswer(event){
     let buttonChoice = event.target;
     let correct = buttonChoice.dataset.correct; //Takes assigned 'correct' dataset and adds it to the 'correct' variable
@@ -210,16 +234,28 @@ function userAnswer(event){
     }
 }
 
+/**
+* Increases the correct answer score if the user is correct.
+*/
 function incrementScore() { //Increments correct score tally.
     correctScore++;
     console.log('right');
 }
 
+/**
+* Increases the incorrect answer score if the user is correct.
+*/
 function incrementWrong() { //Increments incorrect score tally.
     incorrectScore++;
     console.log('wrong');
 }
 
+/**
+* Adds a class to the answer buttons depending on their datatype.
+* The class adds a coloured background to the buttons.
+* @param {element} element
+* @param {dataset} correct
+*/
 function setCorrectIncorrect(element, correct) { //Adds a class to selected elements based on their data types when selected.
     clearCorrectIncorrect(element);
     if (correct){
@@ -229,6 +265,10 @@ function setCorrectIncorrect(element, correct) { //Adds a class to selected elem
     }
 }
 
+/**
+* Clears the class lists from the buttons when a new question is displayed.
+* @param {element} element
+*/
 function clearCorrectIncorrect(element) { //Clears assigned class list each time a question is displayed
     element.classList.remove('correct');
     element.classList.remove('incorrect');
@@ -246,12 +286,18 @@ function progressBar() {
     questionNo.innerHTML = `Q: ${currentQuestion +1}`; 
 }
 
-function quizEnd() { // Displays score text at end of quiz.
+/**
+ * Displays score text at end of quiz.
+ */
+function quizEnd() {
     questionText.innerHTML = `Congratulations! You have completed the quiz! <br> You answered ${correctScore} questions correctly.<br>You answered ${incorrectScore} questions incorrectly. <br> Press Restart to try again!`;
     scoreReset();
 }
 
-function scoreReset() { //Resets score at end of quiz.
+/**
+ * Resets score at end of quiz.
+ */
+function scoreReset() {
     incorrectScore = 0;
     correctScore = 0;
 }
