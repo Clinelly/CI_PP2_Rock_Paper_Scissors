@@ -230,8 +230,8 @@ One warning was flagged with reference to functions taking values from higher sc
 <details><summary>Form</summary>
 <img src="docs/validation/form-js-validation.png">
 </details>
-Two warnings were flagged. Two undeclared variables are in the Form script (form.js). The code for the form was copied from the emailJS website.
-The variables exist as such because the whole JavaScript script has been seperated down into several files and there is no inline code in the html file.
+Two warnings were flagged. Two undeclared variables are in the Form script (form.js). 
+This is because the code for the form has been taken from the emailJS website which uses some different functionality. The code for this project has been seperated into different files and there is no inline code in the html files.
 
 ### Accessibility
 

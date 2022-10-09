@@ -37,6 +37,7 @@ const computerScore = 0; // Variable for computer score to be incremented at gam
 /**
  * Takes userInput from event activation and assigns a value to it.
  * Computer answer is generated from a random number and an assigned value.
+ * @param {DataTransfer} userInput
  */
 function runGame (userInput){
     let compInput = Math.floor(Math.random()*5)+1;
@@ -58,6 +59,8 @@ function runGame (userInput){
 /**
  * Takes the values of the user input and computer choice and compares them.
  * Decides who has won the round.
+ * @param {DataTransfer} userInput
+ * @param {string} compInput
  */
  function compare(userInput, compInput){
     let outcome = "";
@@ -119,6 +122,7 @@ function runGame (userInput){
 
 /**
  * Takes the returned value of the compare function and displays it into the game-text.
+ * @param {innerHTML} outcome
  */
  function result(outcome){
     let gameEnd = document.getElementById("game-text");
@@ -144,6 +148,7 @@ function gameSetup() {
 
 /**
  * Score function. Increments the score of the computer or user.
+ * @param {innerHTML} outcome
  */
 
 function incrementScore(outcome) {
