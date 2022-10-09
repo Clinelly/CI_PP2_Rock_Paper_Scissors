@@ -56,7 +56,6 @@ The overall project goal is to create a fun and interactive entertainment websit
 - Allow users to take a quiz.
 - Pass on game knowledge.
 
-
 ## User Experience
 
 ### Target Audience 
@@ -113,7 +112,6 @@ The website has three pages:
 <details><summary>Form</summary>
 <img src="docs/wireframes/form_WF.png">
 </details>
-
 
 ## Technologies Used
 
